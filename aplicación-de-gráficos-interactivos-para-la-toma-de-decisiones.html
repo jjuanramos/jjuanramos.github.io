@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</title>
+  <meta name="description" content="2 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  
+  
+  
+
+<meta name="author" content="Juan Ramos Hernández, Universidad Politécnica de Valencia" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="desarrollo-de-la-aplicación.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.9.2/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/lfx-heat-0.1.0/lfx-heat-prod.js"></script>
+<script src="libs/lfx-heat-0.1.0/lfx-heat-bindings.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> date: “28/3/2020”</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#definiciones"><i class="fa fa-check"></i><b>1.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#conceptos-relacionados-con-el-mundo-start-up"><i class="fa fa-check"></i><b>1.1.1</b> Conceptos relacionados con el mundo start-up</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#conceptos-relacionados-con-homyspace"><i class="fa fa-check"></i><b>1.1.2</b> Conceptos relacionados con Homyspace:</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#qué-es-homyspace"><i class="fa fa-check"></i><b>1.2</b> ¿Qué es Homyspace?</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#flujo-de-trabajo-de-homyspace"><i class="fa fa-check"></i><b>1.3</b> Flujo de trabajo de Homyspace</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#flujo-de-proveedores"><i class="fa fa-check"></i><b>1.3.1</b> Flujo de Proveedores</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#flujo-de-empresas"><i class="fa fa-check"></i><b>1.3.2</b> Flujo de Empresas</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#problema-a-resolver"><i class="fa fa-check"></i><b>1.4</b> Problema a resolver</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#objetivo-general"><i class="fa fa-check"></i><b>1.5</b> Objetivo General</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#objetivos-específicos"><i class="fa fa-check"></i><b>1.6</b> Objetivos Específicos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><i class="fa fa-check"></i><b>2</b> Aplicación de gráficos interactivos para la toma de decisiones</a><ul>
+<li class="chapter" data-level="" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#introducción"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="2.1" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#qué-es-un-gráfico-interactivo"><i class="fa fa-check"></i><b>2.1</b> ¿Qué es un gráfico interactivo?</a></li>
+<li class="chapter" data-level="2.2" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#ventajas-de-gráficos-interactivos-frente-a-los-estáticos"><i class="fa fa-check"></i><b>2.2</b> Ventajas de gráficos interactivos frente a los estáticos</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#inconvenientes-de-los-gráficos-interactivos"><i class="fa fa-check"></i><b>2.2.1</b> Inconvenientes de los gráficos interactivos</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-1"><i class="fa fa-check"></i><b>2.3</b> Aplicación de gráficos interactivos para la toma de decisiones</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#aplicación-aspecto-y-componentes"><i class="fa fa-check"></i><b>2.3.1</b> Aplicación: Aspecto y componentes</a></li>
+<li class="chapter" data-level="2.3.2" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#aplicación-en-el-equipo-de-proveedores"><i class="fa fa-check"></i><b>2.3.2</b> Aplicación en el equipo de proveedores</a></li>
+<li class="chapter" data-level="2.3.3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html#aplicación-como-herramienta-de-inversión"><i class="fa fa-check"></i><b>2.3.3</b> Aplicación como herramienta de inversión</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html"><i class="fa fa-check"></i><b>3</b> Desarrollo de la aplicación</a><ul>
+<li class="chapter" data-level="" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#introducción-1"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="3.1" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#fuente-de-datos"><i class="fa fa-check"></i><b>3.1</b> Fuente de datos</a><ul>
+<li class="chapter" data-level="" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#introducción-2"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="3.1.1" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#etl-pipeline-definición"><i class="fa fa-check"></i><b>3.1.1</b> ETL Pipeline: Definición</a></li>
+<li class="chapter" data-level="3.1.2" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#origen-de-datos"><i class="fa fa-check"></i><b>3.1.2</b> Origen de datos</a></li>
+<li class="chapter" data-level="3.1.3" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#diseño-de-la-pipeline"><i class="fa fa-check"></i><b>3.1.3</b> Diseño de la Pipeline</a></li>
+<li class="chapter" data-level="3.1.4" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#desarrollo-de-la-pipeline"><i class="fa fa-check"></i><b>3.1.4</b> Desarrollo de la Pipeline</a></li>
+<li class="chapter" data-level="3.1.5" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#arquitectura-final-y-gestión-de-su-actualización"><i class="fa fa-check"></i><b>3.1.5</b> Arquitectura final y gestión de su actualización</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#gráficos-interactivos"><i class="fa fa-check"></i><b>3.2</b> Gráficos Interactivos</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#componentes"><i class="fa fa-check"></i><b>3.2.1</b> Componentes</a></li>
+<li class="chapter" data-level="3.2.2" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#interacción-entre-componentes"><i class="fa fa-check"></i><b>3.2.2</b> Interacción entre componentes</a></li>
+<li class="chapter" data-level="3.2.3" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#diseño-mock-up"><i class="fa fa-check"></i><b>3.2.3</b> Diseño Mock Up</a></li>
+<li class="chapter" data-level="3.2.4" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#desarrollo"><i class="fa fa-check"></i><b>3.2.4</b> Desarrollo</a></li>
+<li class="chapter" data-level="3.2.5" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html#aspecto-final"><i class="fa fa-check"></i><b>3.2.5</b> Aspecto Final</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="recapitulación.html"><a href="recapitulación.html"><i class="fa fa-check"></i><b>4</b> Recapitulación</a></li>
+<li class="chapter" data-level="5" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>5</b> Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones" class="section level1">
+<h1><span class="header-section-number">2</span> Aplicación de gráficos interactivos para la toma de decisiones</h1>
+<div id="introducción" class="section level2 unnumbered">
+<h2>Introducción</h2>
+<p>Para explicar este proyecto, seguiremos una metodología <em>top-down</em>: Empezaremos por un nivel de abstracción muy alto, donde mostraremos cómo se emplea la herramienta una vez ha sido creada: El uso actual por parte del equipo de proveedores de la misma, así como su aplicación como herramienta de inversión inmobiliaria. Una vez sepamos <strong>para qué se utiliza</strong>, reduciremos esta abstracción respondiendo a la pregunta <strong>¿cómo ha sido desarrollada?</strong>, la cual está compuesta de una serie de subcuestiones: ¿Por qué se ha optado por este gráfico? ¿Por qué mostrar esta información y no otra? etc.</p>
+<p>En esta sección, nos centraremos en explicar para qué se utiliza.
+Primero, definiremos los gráficos interactivos y expondremos sus ventajas con respecto a los gráficos tradicionales, así como sus inconvenientes.
+Cuando ya tengamos el suficiente contexto, abordaremos el uso del conjunto de gráficos interactivos por parte del equipo de proveedores: En qué situaciones y cómo lo utilizan.
+Por último, expondremos la posible aplicación y comercialización de la herramienta para usos relacionados con la inversión inmobiliaria.</p>
+</div>
+<div id="qué-es-un-gráfico-interactivo" class="section level2">
+<h2><span class="header-section-number">2.1</span> ¿Qué es un gráfico interactivo?</h2>
+<p>Se ha avanzado mucho en el campo de la visualización de datos. El primer gráfico registrado en la historia data de <em>1628</em>, creado por Michael Florent van Langren con el propósito de transmitir la magnitud del problema que quería abordar, que consistía en determinar la longitud geográfica.
+Por entonces, se carecía del conocimiento y de las herramientas que facilitan la creación de gráficos de forma ágil. Aún así, se recurría a ellos por la misma razón por la que los utilizamos a día de hoy: <strong>facilitan la comprensión de la información</strong>.</p>
+<p>Con la llegada de los ordenadores, nació la posibilidad de desarrollar gráficos cada vez más complejos, tanto por su diseño y características como por la cantidad de información que utilizaban como fuente. Gracias al mayor poder computacional, se exploró la viabilidad de que estos gráficos dejaran de ser una “foto” de la información de la que se alimentaban, y se convirtieran en aplicaciones en sí mismas.
+Así, un gráfico interactivo es <strong>un gráfico que permite al usuario interactuar con la información que se utiliza como fuente de datos</strong>.</p>
+</div>
+<div id="ventajas-de-gráficos-interactivos-frente-a-los-estáticos" class="section level2">
+<h2><span class="header-section-number">2.2</span> Ventajas de gráficos interactivos frente a los estáticos</h2>
+<p>A continuación, haremos una comparación del gráfico interactivo frente al estático. Expondremos las ventajas que ofrece escoger esta tecnología en vez de opciones más tradicionales, así como sus inconvenientes.</p>
+<p>Para ello, comenzaremos con un ejemplo sencillo, aumentando la complejidad con un segundo ejemplo. La razón de seguir este procedimiento es que las ventajas de emplear gráficos interactivos aumenta, por lo general, con la complejidad de la información expuesta.</p>
+<p>Para empezar, hemos creado una fuente de datos que indica, en función de cada país, cuál es la pieza de ropa favorita. Por ejemplo: Si la popularidad de los pantalones es del 25% en España, significa que es la prenda favorita del 25% de la población encuestada.</p>
+<p>Con este simple ejemplo podemos hacer una comparación de gráficos estáticos y dinámicos.</p>
+<p><strong>¿Qué gráfico facilita más el análisis de los datos?</strong></p>
+<p>¿El gráfico estático A?</p>
+<hr />
+<p><img src="Herramientas-de-visualización-interactivas-para-la-toma-de-decisiones-en-una-startup-tecnológica..Rmd_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<hr />
+<p>¿O el gráfico interactivo B?</p>
+<hr />
+<div id="htmlwidget-8af3857e8bbb19305f6c" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8af3857e8bbb19305f6c">{"x":{"data":[{"orientation":"v","width":0.9,"base":0.5,"x":[1],"y":[0.5],"text":"Country: France<br />Popularity: 0.50<br />Clothing: Berets","type":"bar","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Berets","legendgroup":"Berets","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0.6,"x":[3],"y":[0.4],"text":"Country: Spain<br />Popularity: 0.40<br />Clothing: Shirts","type":"bar","marker":{"autocolorscale":false,"color":"rgba(196,154,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Shirts","legendgroup":"Shirts","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.9],"base":[0.8,0.25],"x":[2,3],"y":[0.2,0.35],"text":["Country: Italy<br />Popularity: 0.20<br />Clothing: Skirts","Country: Spain<br />Popularity: 0.35<br />Clothing: Skirts"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(83,180,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Skirts","legendgroup":"Skirts","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0.78,"x":[2],"y":[0.02],"text":"Country: Italy<br />Popularity: 0.02<br />Clothing: Socks","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,192,148,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Socks","legendgroup":"Socks","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0.08,"x":[2],"y":[0.7],"text":"Country: Italy<br />Popularity: 0.70<br />Clothing: Togas","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,182,235,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Togas","legendgroup":"Togas","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.9,0.9],"base":[0,0],"x":[2,3],"y":[0.08,0.25],"text":["Country: Italy<br />Popularity: 0.08<br />Clothing: Trousers","Country: Spain<br />Popularity: 0.25<br />Clothing: Trousers"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(165,138,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Trousers","legendgroup":"Trousers","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[1],"y":[0.5],"text":"Country: France<br />Popularity: 0.50<br />Clothing: Turtlenecks","type":"bar","marker":{"autocolorscale":false,"color":"rgba(251,97,215,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"Turtlenecks","legendgroup":"Turtlenecks","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":40.1826484018265,"l":48.9497716894977},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"Graph that shows favorite clothing piece per country (B)","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,3.6],"tickmode":"array","ticktext":["France","Italy","Spain"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["France","Italy","Spain"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Country","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.05,1.05],"tickmode":"array","ticktext":["0.00","0.25","0.50","0.75","1.00"],"tickvals":[0,0.25,0.5,0.75,1],"categoryorder":"array","categoryarray":["0.00","0.25","0.50","0.75","1.00"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Popularity","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"y":0.96751968503937},"annotations":[{"text":"Clothing","x":1.02,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"left","yanchor":"bottom","legendTitle":true}],"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"14ecca6444":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"14ecca6444","visdat":{"14ecca6444":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<hr />
+<p>Aunque los datos son limitados y, por lo tanto, la información que se puede extraer de los mismos también lo es, hay una diferencia notable entre ambos gráficos a la hora de digerir la información:</p>
+<ol style="list-style-type: decimal">
+<li>Podemos saber el porcentaje exacto de popularidad de cada prenda en cada país únicamente pasando el ratón por encima del gráfico interactivo, así como hacer zoom en los lugares que más nos interesan. De esta forma, aumentan la <strong>precisión</strong> y la <strong>profundidad</strong> del análisis. Esto resulta especialmente valioso cuando el volumen de los datos es alto, ya que podemos familiarizarnos con los mismos rápidamente.</li>
+<li>Podemos filtrar prendas clicando sobre ellas en la leyenda. La productividad del usuario aumenta porque puede realizar el filtrado de manera instantánea, sin necesidad de editar y ejecutar el gráfico cada vez. Esto concede <strong>autonomía</strong> al usuario, ya que no tiene que depender de un tercero para responder las preguntas que considera convenientes. Del mismo modo, al poder decidir qué información desea visualizar en cada instante, el analista puede tratar datos multidimensionales eficientemente.</li>
+<li>Concede al usuario un <strong>rol activo</strong> en la exploración de los datos. Aunque la información sea la misma en el gráfico estático y en el interactivo, el hecho de poder investigar y jugar con los datos ayuda a analizar con más profundidad la información a mano.</li>
+</ol>
+<p>Veamos otro ejemplo: Hemos creado una serie de pseudoinmuebles en Valencia los cuales vamos a trasladar a un mapa. En el mapa, haremos uso de un mapa de calor para ver en qué zonas de Valencia hay más densidad de inmuebles.</p>
+<p>Comparemos una visualización estática del mapa vs una que permita zoomear en el mapa.</p>
+<p>Primero, mostraremos la versión estática. Después, el mapa interactivo.</p>
+<hr />
+<p><img src="images/staticmap.png" style="display: block; margin: auto;" /></p>
+<hr />
+<div id="htmlwidget-96ec5cc7fe4bf03080c5" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-96ec5cc7fe4bf03080c5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[39.48,-0.37],12,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addHeatmap","args":[[[39.4627673,-0.342958500000009,5],[39.4713815,-0.402688200000057,5],[39.4907443,-0.39532829999996,5],[39.4716431,-0.378465000000006,5],[39.4699925,-0.404179900000031,5],[39.4725339,-0.375804499999958,5],[39.4549761,-0.359903099999997,5],[39.4595471,-0.364246900000012,5],[39.471587,-0.3765181,5],[39.4699925,-0.404179900000031,5],[39.4767701,-0.3769384,5],[39.469557809005,-0.33356971720127,5],[39.4570462,-0.371174800000063,5],[39.4651027,-0.37481019999996,5],[39.4695394,-0.333538299999987,5],[39.4627527,-0.381997599999977,5],[39.5033084,-0.417407599999933,5],[39.4713815,-0.402688200000057,5],[39.4745579,-0.3852988,5],[39.466302,-0.32967189999999,5],[39.45586,-0.35632,5],[39.467572,-0.392160099999955,5],[39.447938,-0.37997919999998,5],[39.463997273649,-0.33299624919891,5],[39.4642655,-0.395461599999976,5],[39.4586101,-0.343886600000019,5],[39.4637991,-0.392257800000039,5],[39.4586101,-0.343886600000019,5],[39.4627673,-0.342958500000009,5],[39.4643097,-0.330557799999951,5],[39.4699075,-0.3762881,5],[39.4786258,-0.327288299999964,5],[39.5033084,-0.417407599999933,5],[39.4633139,-0.401353900000004,5],[39.4643612,-0.330542899999955,5],[39.4570462,-0.371174800000063,5],[39.4637538,-0.37104260000001,5],[39.4466507,-0.379921800000034,5],[39.472707,-0.377756299999987,5],[39.475165,-0.378627400000028,5],[39.4587066,-0.33461669999997,5],[39.4664419,-0.37954239999999,5],[39.4907443,-0.39532829999996,5],[39.447938,-0.37997919999998,5],[39.4747898,-0.330088100000012,5],[39.5033084,-0.417407599999933,5],[39.4536556,-0.39154880000001,5],[39.4616818,-0.356189,5],[39.471955169864,-0.33642485912878,5],[39.4612185,-0.3774485,5],[39.4670349,-0.3725766,5],[39.4612185,-0.3774485,5],[39.4770554,-0.374101300000007,5],[39.4614581,-0.3611219,5],[39.4724088,-0.333324100000027,5],[39.4878099,-0.374094600000035,5],[39.4627673,-0.342958500000009,5],[39.4891634,-0.375114499999995,5],[39.4761826,-0.375615000000039,5],[39.4761826,-0.375615000000039,5],[39.4612185,-0.3774485,5],[39.4578098,-0.383381699999973,5],[39.4713815,-0.402688200000057,5],[39.47007,-0.34680000000003,5],[39.4570462,-0.371174800000063,5],[39.4797474,-0.377445200000011,5],[39.4739838,-0.32798419999995,5],[39.467746,-0.329802400000062,5],[39.469557809005,-0.33356971720127,5],[39.467572,-0.392160099999955,5],[39.4549761,-0.359903099999997,5],[39.4628133,-0.3819176,5],[39.4674191,-0.353035399999953,5],[39.4604224,-0.413460399999963,5],[39.4726624,-0.384713499999975,5],[39.4675166,-0.35734960000002,5],[39.4570003,-0.357606900000064,5],[39.467572,-0.392160099999955,5],[39.4679407,-0.371541799999932,5],[39.4553367,-0.3587922,5],[39.467572,-0.392160099999955,5],[39.4532407,-0.38914879999993,5],[39.4627527,-0.381997599999977,5],[39.4627673,-0.342958500000009,5],[39.4595471,-0.364246900000012,5],[39.4637538,-0.37104260000001,5],[39.4648712,-0.336909399999968,5],[39.471406,-0.3784811,5],[39.4907443,-0.39532829999996,5],[39.4540474,-0.392939500000011,5],[39.4727929,-0.34546679999994,5],[39.458061,-0.385411900000008,5],[39.4769883,-0.3778709,5],[39.4612448,-0.343674800000031,5],[39.4725855,-0.384730999999988,5],[39.4699925,-0.404179900000031,5],[39.4621428,-0.368748500000038,5],[39.485944,-0.372887600000013,5],[39.477792,-0.326666799999998,5],[39.4627527,-0.381997599999977,5],[39.4549761,-0.359903099999997,5],[39.4600283,-0.361359900000025,5],[39.4700657,-0.328570200000058,5],[39.4549761,-0.359903099999997,5],[39.4727028,-0.375529400000005,5],[39.4724248,-0.331006399999978,5],[39.4600204,-0.332952400000067,5],[39.4570003,-0.357606900000064,5],[39.475165,-0.378627400000028,5],[39.4761826,-0.375615000000039,5],[39.4579646,-0.375869100000045,5],[39.5033084,-0.417407599999933,5],[39.5033084,-0.417407599999933,5],[39.4622709,-0.37707230000001,5],[39.4772527,-0.37395319999996,5],[39.4622709,-0.37707230000001,5],[39.4571827,-0.344560900000033,5],[39.4655618,-0.408437700000036,5],[39.4633139,-0.401353900000004,5],[39.4745403,-0.387021799999957,5],[39.4744921,-0.376137599999993,5],[39.4576739,-0.359225400000014,5],[39.4724088,-0.333324100000027,5],[39.4724088,-0.333324100000027,5],[39.4884237,-0.378690199999937,5],[39.4633139,-0.401353900000004,5],[39.4798947,-0.371002,5],[39.4638484,-0.391539800000032,5],[39.472707,-0.377756299999987,5],[39.4576739,-0.359225400000014,5],[39.447938,-0.37997919999998,5],[39.479682,-0.380435700000021,5],[39.4634885,-0.391327899999965,5],[39.4703602,-0.38564729999996,5],[39.460716884025,-0.39229068717191,5],[39.4618287,-0.342189400000052,5],[39.467572,-0.392160099999955,5],[39.4595471,-0.364246900000012,5],[39.4576739,-0.359225400000014,5],[39.565912231266,-0.2857375148443,5],[39.5033084,-0.417407599999933,5],[39.4570462,-0.371174800000063,5],[39.447938,-0.37997919999998,5],[39.4627673,-0.342958500000009,5],[39.4717534,-0.414681400000063,5],[39.4529524,-0.403340100000037,5],[39.455102,-0.39090090000002,5],[39.4600204,-0.332952400000067,5],[39.4778518,-0.3803135,5],[39.459663,-0.337647199999992,5],[39.4400938,-0.388644500000055,5],[39.4731461,-0.35455550000006,5],[39.4642655,-0.395461599999976,5],[39.4699925,-0.404179900000031,5],[39.4695394,-0.333538299999987,5],[39.4643097,-0.330557799999951,5],[39.4727929,-0.34546679999994,5],[39.479682,-0.380435700000021,5],[39.4699075,-0.3762881,5],[39.4633139,-0.401353900000004,5],[39.4788079,-0.374371500000052,5],[39.5033084,-0.417407599999933,5],[39.4824386,-0.32729180000001,5],[39.4762627,-0.325867900000048,5],[39.4523063,-0.333057000000053,5],[39.4713815,-0.402688200000057,5],[39.4570462,-0.371174800000063,5],[39.459316023839,-0.3691577911377,5],[39.4853084,-0.35721280000007,5],[39.4625254,-0.387461600000051,5],[39.4718596,-0.38231159999998,5],[39.4643097,-0.330557799999951,5],[39.4643097,-0.330557799999951,5],[39.4400938,-0.388644500000055,5],[39.4595471,-0.364246900000012,5],[39.4713815,-0.402688200000057,5],[39.4571827,-0.344560900000033,5],[39.4749066,-0.391883900000039,5],[39.455102,-0.39090090000002,5],[39.4466507,-0.379921800000034,5],[39.4576739,-0.359225400000014,5],[39.4627527,-0.381997599999977,5],[39.4548478,-0.381759299999999,5],[39.4699075,-0.3762881,5],[39.4716431,-0.378465000000006,5],[39.4627673,-0.342958500000009,5],[39.4529524,-0.403340100000037,5],[39.4695394,-0.333538299999987,5],[39.4643097,-0.330557799999951,5],[39.4627673,-0.342958500000009,5],[39.472707,-0.377756299999987,5],[39.4772918,-0.377120300000001,5],[39.455102,-0.39090090000002,5],[39.4727929,-0.34546679999994,5],[39.4622979,-0.367056300000058,5],[39.5033084,-0.417407599999933,5],[39.4713815,-0.402688200000057,5],[39.4761826,-0.375615000000039,5],[39.447938,-0.37997919999998,5],[39.4633139,-0.401353900000004,5]],null,7,{"minOpacity":0.05,"max":25,"radius":30,"blur":25,"cellSize":85}]}],"limits":{"lat":[39.4400938,39.565912231266],"lng":[-0.417407599999933,-0.2857375148443]}},"evals":[],"jsHooks":[]}</script>
+<hr />
+<p>En este caso, es claramente observable que el gráfico interactivo aporta más valor que el estático.
+Debido a la distancia entre los focos, si quisiéramos hacer uso del mapa estático tendríamos que obtener mapas de las diferentes zonas (Ciutat Vella, Poblat Marítims, etc.) y hacer una comparación a posteriori. Con el mapa interactivo, podemos navegar a través de las diferentes localidades y averiguar de manera sencilla en qué zonas hay una mayor densidad de inmuebles. Y no sólo eso, sino que podemos hacer zoom para obtener una precisión máxima de la localización de cada foco.
+Las cualidades mencionadas previamente en el punto 1, <strong>precisión</strong> y <strong>profundidad</strong>, destacan para el análisis de información geoespacial.</p>
+<p>Otra ventaja de los gráficos interactivos, es que su implementación puede llegar a ser realmente sencilla. Volviendo al ejemplo de las prendas favoritas por país, el código para crear el gráfico estático es el siguiente:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(ggplot2) <span class="co"># Cargamos la librería ggplot2, la cual utilizaremos para crear el gráfico</span></a>
+<a class="sourceLine" id="cb1-2" title="2">filepath &lt;-<span class="st"> </span><span class="kw">file.path</span>(<span class="st">&quot;data&quot;</span>, <span class="st">&quot;fashionData.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3">data&lt;-<span class="st"> </span><span class="kw">read.csv2</span>(filepath) <span class="co"># Cargamos los datos</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5">data &lt;-<span class="st"> </span>data <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># Cambiamos el nombre a una de las columnas</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="st">  </span><span class="kw">rename</span>(</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="dt">Country =</span> <span class="st">&quot;ï..Country&quot;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">  )</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="co"># Código para crear el gráfico de barras donde en el eje x tenemos cada país, en el eje y el nivel</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="co"># de popularidad de cada prenda y donde cada barra aparecerá diferenciada cada prenda de ropa por </span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="co"># colores</span></a>
+<a class="sourceLine" id="cb1-13" title="13"></a>
+<a class="sourceLine" id="cb1-14" title="14">fashionPlot &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data=</span>data, <span class="kw">aes</span>(<span class="dt">x=</span>Country, <span class="dt">fill =</span> Clothing, <span class="dt">y =</span> Popularity)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat=</span><span class="st">&quot;identity&quot;</span>) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Graph that shows favorite clothing piece per country (A)&quot;</span>,</a>
+<a class="sourceLine" id="cb1-17" title="17">       <span class="dt">fill =</span> <span class="st">&quot;Clothing&quot;</span>) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="st">  </span><span class="kw">theme_minimal</span>()</a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20">fashionPlot <span class="co"># aquí mostramos el gráfico</span></a></code></pre></div>
+<p>Para convertir este gráfico estático en un gráfico interactivo, todo lo que tenemos que hacer es seguir dos pasos:</p>
+<ol style="list-style-type: decimal">
+<li>Instalamos la librería <em>plotly</em>, la cual nos permite convertir gráficos estáticos en interactivos.</li>
+<li>Utilizamos la función <em>plotly::ggplotly</em>, pasándole como input el gráfico estático previamente creado, <em>fashionPlot</em>.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># install.packages(&quot;plotly&quot;) # (Únicamente ejecutaríamos esta línea si no tuviéramos la librería</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co"># ya instalada en el ordenador)</span></a>
+<a class="sourceLine" id="cb2-3" title="3">plotly<span class="op">::</span><span class="kw">ggplotly</span>(fashionPlot)</a></code></pre></div>
+<p>Por lo general, esto es todo lo que nos hace falta para convertir un gráfico estático en un gráfico interactivo.</p>
+<div id="inconvenientes-de-los-gráficos-interactivos" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Inconvenientes de los gráficos interactivos</h3>
+<p>Por desgracia, la implementación de gráficos interactivos también puede suponer inconvenientes y, dependiendo de las necesidades del analista, puede que optar por el uso de gráficos estáticos pueda ser acertado. Estos inconvenientes son:</p>
+<ul>
+<li>Es necesario instalar librerías nuevas. Por lo general, esto no supone un problema si el análisis se realiza en el ordenador del analista. No obstante, para situaciones en las que la aplicación con la que se va a realizar el análisis se almacena en la nube esto puede ser un gran inconveniente, ya que la memoria de la localización donde se alberga la aplicación es limitada y, frecuentemente, es inviable aumentar la capacidad de almacenamiento.</li>
+<li>Un gráfico interactivo pesa más que uno estático. Sigue la misma lógica que el punto anterior.</li>
+<li>La implementación de gráficos interactivos puede ser muy sencilla. Sobretodo, esto es así cuando el gráfico estático original es relativamente simple y ha sido creado utilizado una librería ampliamente utilizada, como puede ser <em>ggplot</em>. Sin embargo, cuando la complejidad del gráfico aumenta o se trata de un gráfico nicho, <strong>es muy probable que haya que desarrollar el gráfico utilizando librerías completamente nuevas</strong>, incluso tipos de datos diferentes a los utilizados en un gráfico estático. Por ende, es necesario que el analista valore el <em>trade-off</em> que esto supone, y decida si le es rentable aprender a utilizar estas librerías o es preferible decantarse por un gráfico más tradicional. De hecho, eso es lo que ocurre con el caso de la información geoespacial: Las librerías que utilizamos para cada caso son totalmente diferentes y no son combinables (como sí lo son <em>plotly</em> y <em>ggplot2</em>), lo cual implica un desarrollo íntegro tanto para el gráfico estático como para el interactivo.</li>
+</ul>
+<p>En resumen, los principales inconvenientes de los gráficos interactivos son sus <strong>mayores requirimientos de memoria</strong> y la <strong>posible inversión de tiempo para aprender a desarrollarlos e implementarlos</strong>.</p>
+</div>
+</div>
+<div id="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-1" class="section level2">
+<h2><span class="header-section-number">2.3</span> Aplicación de gráficos interactivos para la toma de decisiones</h2>
+<p><strong>Empezar introduciendo el dashboard terminado (pendiente de añadir inmuebles x distrito vs opps x distrito -basado en numberOfPeople y beds, pie con % de iCals)</strong></p>
+<p>Como hemos comentado al inicio de la Sección 3, seguimos un proceso <em>top-down</em> a la hora de abordar la explicación de la aplicación.
+En esta subsección, abordaremos la cuestión <strong>¿Para qué sirve?</strong>, donde empezaremos mostrando la aplicación y sus componentes, con el propósito de facilitar al lector la comprensión tanto del uso de la herramienta por parte del equipo de proveedores, como su uso como herramienta de inversión.</p>
+<p>Después, tras haber mostrado la aplicación y haber explicado brevemente la función de cada uno de los gráficos que la componen, explicaremos los diferentes escenarios en los que se utiliza.</p>
+<div id="aplicación-aspecto-y-componentes" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Aplicación: Aspecto y componentes</h3>
+<p>Como recordatorio, la razón de existencia de esta aplicación es <strong>ayudar a tomar decisiones basadas en datos con respecto a los inmuebles en la base de datos de Homyspace y su interacción con los clientes.</strong>
+La aplicación está compuesta de 6 filtros distintos y de 4 gráficos interactivos diferentes que se ajustan dinámicamente a los filtros indicados.</p>
+<p>El primer filtro con el que nos encontramos, <strong>“Selecciona en función de qué campo colorear el mapa de calor”</strong>, afecta exclusivamente al mapa de calor, y es el único de todos los filtros que es directamente visible para el usuario de la aplicación. En función del campo, estaremos dando más importancia a la oferta, a la demanda o a la intersección de ambas.</p>
+<ul>
+<li>Si elegimos “Número de Oportunidades”, el mapa pintará más claro los distritos con menos demanda, y más oscuros aquellos donde nos hacen más solicitudes de alojamiento.</li>
+<li>Si elegimos “Número de Inmuebles”, el mapa dará más y menos importancia a aquellos distritos con más o menos inmuebles respectivamente.</li>
+<li>Por último, si elegimos “Número de Propuestas Aceptadas”, los distritos más oscuros serán aquellos donde se han aceptado más propuestas. Los más claros aquellos donde menos.</li>
+</ul>
+<hr />
+<p><img src="images/heatmap_colores.jpg" /><!-- --></p>
+<hr />
+<p>Para acceder al resto de filtros, es necesario clicar en el borde izquierdo superior de la pantalla, a la derecha del icono de Homyspace. Hecho esto, nos aparecerá una lista vertical de opciones no excluyentes, por lo que podremos combinar diferentes filtros para visualizar la información deseada. Todos los gráficos interactivos exceptuando el mapa se actualizan dinámicamente en función de las opciones escogidas en cada filtro. La razón por la que se ha excluido la actualización del mapa tiene un transfondo técnico que se explicará en la sección <em>3.2 Gráficos Interactivos</em> pero, en esencia, el motivo es que si quisiéramos actualizarlo, la velocidad de la aplicación se vería seriamente comprometida.</p>
+<p>En cualquier caso, estos filtros son:</p>
+<ul>
+<li>“Filtra por ciudad”: Aquí podemos decidir sobre qué ciudades nos muestra información la aplicación.</li>
+<li>“Filtra por municipio”: Aquí podemos ser más concretos y especificar el municipio que queremos visualizar.</li>
+<li>“Filtra por distrito”: Una vez más, podemos aumentar la precisión de los datos y escoger qué distrito censal nos interesa más.</li>
+<li>“Filtra por número de camas”: En este caso, podemos escoger el número de camas de los inmuebles y propuestas a analizar.</li>
+<li>“Filtra por número de habitaciones”: Por último, podemos elegir el número de habitaciones de los inmuebles y propuestas sobre los que realizar el análisis.</li>
+</ul>
+<p>Como hemos comentado antes, estos filtros son no excluyentes, por lo que podríamos analizar el estado de los inmuebles de una habitación con dos camas en un distrito de A Coruña, por poner un ejemplo.</p>
+<hr />
+<p><img src="images/heatmap_filtros.jpg" /><!-- --></p>
+<hr />
+<p>A continuación, pasaremos a explicar los gráficos empleados en la aplicación.</p>
+<p>El primer gráfico que vemos al acceder a la aplicación es <strong>el mapa por distritos.</strong></p>
+<hr />
+<p><img src="images/heatmap_mapaCalor.jpg" /><!-- --></p>
+<hr />
+<p>Como podemos ver, el zoom del mapa es a priori demasiado bajo como para poder diferenciar nada. Aumentamos el zoom para ser capaces de reconocer ciertos distritos destacados.</p>
+<hr />
+<p><img src="images/heatmap_mapaCalor2.jpg" /><!-- --></p>
+<hr />
+<p>Ahora ya somos capaces de separar visualmente ciertos distritos, en zonas como Toledo y Cáceres. Como podemos apreciar, hay distritos rojos, amarillos y, si nos fijamos en Madrid, también naranjas. Siguiendo la lógica que hemos comentado antes con respecto al filtro <strong>“Selecciona en función de qué campo colorear el mapa de calor”</strong>, los distritos rojos tienen un mayor número de oportunidades. Después, les siguen los distritos naranjas y, por último, los amarillos.</p>
+<p>Cabe señalar que el gradiente de colores utilizado no es rojo, naranja y amarillo. Es gradual, siendo el máximo un rojo muy oscuro y el mínimo un amarillo blanquecino.</p>
+<p>Por otro lado, aquellos distritos que vemos de color gris tienen este color porque no tienen oportunidades. Pero si es así: <em>¿Por qué aparecen distritos sin oportunidades?</em> Si aparecen ciertos distritos sin oportunidades: <em>¿Por qué no aparecen todos los distritos de España?</em> El motivo es que esos distritos no tienen oportunidades, pero sí inmuebles. Por lo tanto, son <strong>zonas donde tenemos oferta que a día de hoy no ha encajado con las necesidades de nuestros clientes.</strong></p>
+<p>Por último, podemos ver <em>markers</em> de color azul. Estos <em>markers</em> son las ubicaciones de los edificios de un inversor inmobiliario que quiere trabajar con Homyspace. Las direcciones de estos edificios han sido pasadas por una pieza de código que devuelve la geolocalización de los mismos. Después, estas geolocalizaciones han sido trasladadas al mapa con la intención de analizar qué edificios nos interesan, y cuáles no. <strong>(Meter esta parte en captación, falsear ubicaciones de los edificios porque es información confidencial)</strong></p>
+<p>Habiendo visualizado el mapa, podemos seguir bajando por la aplicación. A continuación, nos encontramos con dos gráficos interactivos. Estos se modifican de dos maneras diferentes:</p>
+<ol style="list-style-type: decimal">
+<li>Cuando se clica en un distrito en el mapa, estos se actualizan automáticamente para mostrar la información correspondiente al distrito clicado.</li>
+<li>Cuando se aplican filtros, la información que muestran estos gráficos se filtrará simultáneamente. Por ejemplo: Si filtramos por la ciudad de Madrid, la información que utilizarán será exclusivamente de la ciudad de Madrid.</li>
+</ol>
+<hr />
+<p><img src="images/heatmap_preciosPropuestas.jpg" /><!-- --></p>
+<hr />
+<p>A la izquierda, tenemos un <strong>diagrama de caja</strong> (o <em>boxplot</em> en inglés). A la derecha un <strong>histograma</strong>. Estos dos gráficos se complementan: El diagrama de caja nos indica la distribución de precios de los inmuebles de cada distrito en función del número de habitaciones, y el histograma nos ayuda a cerciorarnos de la validez de esa distribución. Cuanto mayor sea la muestra, más seguros estaremos de que la distribución de precios mostrada es fiable.</p>
+<hr />
+<p><img src="images/heatmap_precios.jpg" /><!-- --></p>
+<p><img src="images/heatmap_propuestas.jpg" /><!-- --></p>
+<hr />
+<p>Por último hemos añadido un resumen en el que podemos visualizar una <strong>tabla que resume toda la información relacionada con cada distrito</strong>.
+Esta tabla contiene filtros propios, muchos más rápidos que los previamente mencionados ya que sólo afectan a la información de la tabla.</p>
+<p>Esto nos permite abordar el análisis de una manera diferente: En vez de tratar de dar visibilidad al estado de cada distrito, con esta tabla se pretende poder <strong>obtener aquellos distritos que cumplan con las condiciones que nos interesen a nosotros</strong>. Por ejemplo, podemos filtrar únicamente los distritos cuyo número de propuestas, <em>numeroPropuestas</em>, sea mayor de 100 y tengan por lo menos 5 inmuebles reservados ( <em>inmueblesConvertidos</em> ).</p>
+<p>Esta estrategia es útil porque podemos identificar qué distritos están funcionando peor para hacer un análisis posterior de por qué no están funcionando. Del mismo modo, podemos averiguar cuáles sí están funcionando y analizar las posibles razones de su éxito, con el propósito de replicarlo en otros distritos.</p>
+<hr />
+<p><img src="images/heatmap_resumen.jpg" /><!-- --></p>
+<hr />
+</div>
+<div id="aplicación-en-el-equipo-de-proveedores" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Aplicación en el equipo de proveedores</h3>
+<p>Una vez hemos mostrado la aplicación, nos disponemos a desarrollar cómo está siendo utilizada por el equipo de proveedores.
+En esta subsección explicaremos la metodología que hemos seguido para difundir el uso de la aplicación por parte del equipo de proveedores.
+Después, visibilizaremos cómo el equipo la utiliza para tareas de captación y negociación, así como de curación.</p>
+<div id="métodos-para-la-difusión-del-uso-de-la-aplicación" class="section level4">
+<h4><span class="header-section-number">2.3.2.1</span> Métodos para la difusión del uso de la aplicación</h4>
+<p>Tras la creación de la aplicación, es esencial obtener <em>feedback</em> del uso de la misma.
+Para ello, hemos creado un vídeo en el que hacemos un <em>tour</em> explicando el funcionamiento de la herramienta, para qué casos de uso puede ser de utilidad, cuáles son sus límites y cómo preveemos que será mejorada. Este vídeo se aloja en una plataforma que utilizamos en Homyspace para transmitir información entre diferentes miembros del equipo. El vídeo va acompañado de un resumen de las funcionalidades de la aplicación, en caso de que el usuario potencial no quiera invertir tiempo en la visualización del vídeo.</p>
+<p>Del mismo modo, una vez la aplicación ha sido creada y publicada en un servicio gestionado, realizamos una <em>masterclass</em> con el equipo de proveedores con el propósito de explicar y extender su uso. Asimismo, se realizan reuniones periódicas en las que cada uno de los miembros del equipo exponen qué les está gustando, dónde se podría mejorar y a qué no le encuentran utilidad.</p>
+<p>La difusión de contenido que ayude a emplear la herramienta es tan importante como la creación de la misma, ya que si la aplicación no es utilizada de nada habrá servido desarrollarla. Por ende, <strong>si queremos maximizar el ROI de un proyecto tecnológico, es necesario invertir en la adopción de aquello que es creado.</strong></p>
+<p>Como recapitulación, la metodología ha consistido en:</p>
+<ol style="list-style-type: decimal">
+<li>Formación pasiva, a través de la creación de contenido a la cual puede acudir el usuario (el vídeo tutorial, el resumen).</li>
+<li>Formación activa, mediante la realización de una <em>masterclass</em>, así como el acuerdo de hacer reuniones periódicas en las que recogemos <em>feedback</em> sobre la aplicación.</li>
+</ol>
+</div>
+<div id="captación" class="section level4">
+<h4><span class="header-section-number">2.3.2.2</span> Captación</h4>
+<p>El caso de uso para el que más se recurre a la aplicación es para ayudar a decidir en qué zonas se van a focalizar los esfuerzos de captación, así como la negociación de precios con proveedores potenciales.</p>
+<p>Por una parte, a la hora de decidir en qué zonas hace falta captar inmuebles, es necesario responder las siguientes preguntas:</p>
+<ul>
+<li><strong>¿Dónde tenemos más producto?</strong></li>
+<li><strong>¿Dónde tenemos mayor demanda?</strong></li>
+<li><strong>¿En qué lugares está encajando bien la oferta disponible con la demanda?</strong></li>
+</ul>
+<p><img src="images/heatmap_colores.jpg" style="display: block; margin: auto;" /></p>
+<hr />
+<p>Si quisiéramos responder a esas preguntas utilizando la herramienta, coloreraríamos por <em>número de oportunidades</em> si quisiéramos valorar la demanda, <em>número de inmuebles</em> si quisiéramos estudiar la oferta y, por último, utilizaríamos como referencia el <em>número de propuestas aceptadas</em> para analizar si el producto disponible está encajando con la tipología de nuestro cliente para esa zona determinada.</p>
+</div>
+</div>
+<div id="aplicación-como-herramienta-de-inversión" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Aplicación como herramienta de inversión</h3>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="desarrollo-de-la-aplicación.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
