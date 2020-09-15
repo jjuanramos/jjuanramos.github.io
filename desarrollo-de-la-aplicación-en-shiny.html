@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</title>
-  <meta name="description" content="4.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <title>3.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</title>
+  <meta name="description" content="3.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta property="og:title" content="3.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta name="twitter:title" content="3.5 Desarrollo de la aplicación en Shiny | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
   
   
   
@@ -49,28 +49,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
-<script src="libs/lfx-heat-0.1.0/lfx-heat-prod.js"></script>
-<script src="libs/lfx-heat-0.1.0/lfx-heat-bindings.js"></script>
-<script src="libs/plotly-binding-4.9.2/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
-<script src="libs/fuse_js-3.2.0/fuse_js-prod.js"></script>
-<link href="libs/lfx-search-2.3.7/lfx-search-prod.css" rel="stylesheet" />
-<script src="libs/lfx-search-2.3.7/lfx-search-prod.js"></script>
-<script src="libs/lfx-search-2.3.7/lfx-search-bindings.js"></script>
-<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
-<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
 
 
 <style type="text/css">
@@ -152,72 +130,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="index.html#section"></a><ul>
 <li class="chapter" data-level="" data-path="resumen.html"><a href="resumen.html"><i class="fa fa-check"></i>Resumen</a></li>
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="0.1" data-path="qué-es-homyspace.html"><a href="qué-es-homyspace.html"><i class="fa fa-check"></i><b>0.1</b> ¿Qué es homyspace?</a></li>
+<li class="chapter" data-level="0.2" data-path="definiciones.html"><a href="definiciones.html"><i class="fa fa-check"></i><b>0.2</b> Definiciones</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-el-mundo-start-up"><i class="fa fa-check"></i><b>0.2.1</b> Conceptos relacionados con el mundo start-up</a></li>
+<li class="chapter" data-level="0.2.2" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-homyspace"><i class="fa fa-check"></i><b>0.2.2</b> Conceptos relacionados con homyspace</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
-<li class="chapter" data-level="1.1" data-path="qué-es-homyspace.html"><a href="qué-es-homyspace.html"><i class="fa fa-check"></i><b>1.1</b> ¿Qué es homyspace?</a></li>
-<li class="chapter" data-level="1.2" data-path="definiciones.html"><a href="definiciones.html"><i class="fa fa-check"></i><b>1.2</b> Definiciones</a><ul>
-<li class="chapter" data-level="1.2.1" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-el-mundo-start-up"><i class="fa fa-check"></i><b>1.2.1</b> Conceptos relacionados con el mundo start-up</a></li>
-<li class="chapter" data-level="1.2.2" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-homyspace"><i class="fa fa-check"></i><b>1.2.2</b> Conceptos relacionados con homyspace</a></li>
-</ul></li>
-<li class="chapter" data-level="1.3" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html"><i class="fa fa-check"></i><b>1.3</b> Flujo de trabajo de homyspace</a><ul>
-<li class="chapter" data-level="1.3.1" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-proveedores"><i class="fa fa-check"></i><b>1.3.1</b> Flujo de Proveedores</a></li>
-<li class="chapter" data-level="1.3.2" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-empresas"><i class="fa fa-check"></i><b>1.3.2</b> Flujo de Empresas</a></li>
+<li class="chapter" data-level="0.3" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html"><i class="fa fa-check"></i><b>0.3</b> Flujo de trabajo de homyspace</a><ul>
+<li class="chapter" data-level="0.3.1" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-proveedores"><i class="fa fa-check"></i><b>0.3.1</b> Flujo de Proveedores</a></li>
+<li class="chapter" data-level="0.3.2" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-empresas"><i class="fa fa-check"></i><b>0.3.2</b> Flujo de Empresas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="objetivos.html"><a href="objetivos.html"><i class="fa fa-check"></i><b>2</b> Objetivos</a><ul>
-<li class="chapter" data-level="2.1" data-path="objetivo-general.html"><a href="objetivo-general.html"><i class="fa fa-check"></i><b>2.1</b> Objetivo General</a></li>
-<li class="chapter" data-level="2.2" data-path="objetivos-específicos.html"><a href="objetivos-específicos.html"><i class="fa fa-check"></i><b>2.2</b> Objetivos Específicos</a></li>
+<li class="chapter" data-level="1" data-path="objetivos.html"><a href="objetivos.html"><i class="fa fa-check"></i><b>1</b> Objetivos</a><ul>
+<li class="chapter" data-level="1.1" data-path="objetivo-general.html"><a href="objetivo-general.html"><i class="fa fa-check"></i><b>1.1</b> Objetivo General</a></li>
+<li class="chapter" data-level="1.2" data-path="objetivos-específicos.html"><a href="objetivos-específicos.html"><i class="fa fa-check"></i><b>1.2</b> Objetivos Específicos</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><i class="fa fa-check"></i><b>3</b> Aplicación de gráficos interactivos para la toma de decisiones</a><ul>
-<li class="chapter" data-level="3.1" data-path="qué-es-un-gráfico-interactivo.html"><a href="qué-es-un-gráfico-interactivo.html"><i class="fa fa-check"></i><b>3.1</b> ¿Qué es un gráfico interactivo?</a></li>
-<li class="chapter" data-level="3.2" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><i class="fa fa-check"></i><b>3.2</b> Ventajas de los gráficos interactivos frente a los estáticos</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html#inconvenientes-de-los-gráficos-interactivos"><i class="fa fa-check"></i><b>3.2.1</b> Inconvenientes de los gráficos interactivos</a></li>
+<li class="chapter" data-level="2" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><i class="fa fa-check"></i><b>2</b> Aplicación de gráficos interactivos para la toma de decisiones</a><ul>
+<li class="chapter" data-level="2.1" data-path="qué-es-un-gráfico-interactivo.html"><a href="qué-es-un-gráfico-interactivo.html"><i class="fa fa-check"></i><b>2.1</b> ¿Qué es un gráfico interactivo?</a></li>
+<li class="chapter" data-level="2.2" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><i class="fa fa-check"></i><b>2.2</b> Ventajas de los gráficos interactivos frente a los estáticos</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html#inconvenientes-de-los-gráficos-interactivos"><i class="fa fa-check"></i><b>2.2.1</b> Inconvenientes de los gráficos interactivos</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><i class="fa fa-check"></i><b>3.3</b> Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes</a></li>
-<li class="chapter" data-level="3.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html"><i class="fa fa-check"></i><b>3.4</b> Aplicación en el equipo de proveedores</a><ul>
-<li class="chapter" data-level="3.4.1" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#métodos-para-la-difusión-del-uso-de-la-aplicación"><i class="fa fa-check"></i><b>3.4.1</b> Métodos para la difusión del uso de la aplicación</a></li>
-<li class="chapter" data-level="3.4.2" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#captación"><i class="fa fa-check"></i><b>3.4.2</b> Captación</a></li>
-<li class="chapter" data-level="3.4.3" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#negociación"><i class="fa fa-check"></i><b>3.4.3</b> Negociación</a></li>
-<li class="chapter" data-level="3.4.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#curación"><i class="fa fa-check"></i><b>3.4.4</b> Curación</a></li>
+<li class="chapter" data-level="2.3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><i class="fa fa-check"></i><b>2.3</b> Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes</a></li>
+<li class="chapter" data-level="2.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html"><i class="fa fa-check"></i><b>2.4</b> Aplicación en el equipo de proveedores</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#métodos-para-la-difusión-del-uso-de-la-aplicación"><i class="fa fa-check"></i><b>2.4.1</b> Métodos para la difusión del uso de la aplicación</a></li>
+<li class="chapter" data-level="2.4.2" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#captación"><i class="fa fa-check"></i><b>2.4.2</b> Captación</a></li>
+<li class="chapter" data-level="2.4.3" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#negociación"><i class="fa fa-check"></i><b>2.4.3</b> Negociación</a></li>
+<li class="chapter" data-level="2.4.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#curación"><i class="fa fa-check"></i><b>2.4.4</b> Curación</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="aplicación-como-herramienta-de-inversión.html"><a href="aplicación-como-herramienta-de-inversión.html"><i class="fa fa-check"></i><b>3.5</b> Aplicación como herramienta de inversión</a></li>
+<li class="chapter" data-level="2.5" data-path="aplicación-como-herramienta-de-inversión.html"><a href="aplicación-como-herramienta-de-inversión.html"><i class="fa fa-check"></i><b>2.5</b> Aplicación como herramienta de inversión</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html"><i class="fa fa-check"></i><b>4</b> Desarrollo de la aplicación</a><ul>
-<li class="chapter" data-level="4.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html"><i class="fa fa-check"></i><b>4.1</b> Fuente de datos</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#introducción-1"><i class="fa fa-check"></i><b>4.1.1</b> Introducción</a></li>
-<li class="chapter" data-level="4.1.2" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#etl-pipeline-definición"><i class="fa fa-check"></i><b>4.1.2</b> ETL Pipeline: Definición</a></li>
-<li class="chapter" data-level="4.1.3" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#orígenes-de-datos"><i class="fa fa-check"></i><b>4.1.3</b> Orígenes de datos</a></li>
+<li class="chapter" data-level="3" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html"><i class="fa fa-check"></i><b>3</b> Desarrollo de la aplicación</a><ul>
+<li class="chapter" data-level="3.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html"><i class="fa fa-check"></i><b>3.1</b> Fuente de datos</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#introducción"><i class="fa fa-check"></i><b>3.1.1</b> Introducción</a></li>
+<li class="chapter" data-level="3.1.2" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#etl-pipeline-definición"><i class="fa fa-check"></i><b>3.1.2</b> ETL Pipeline: Definición</a></li>
+<li class="chapter" data-level="3.1.3" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#orígenes-de-datos"><i class="fa fa-check"></i><b>3.1.3</b> Orígenes de datos</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="diseño-de-la-pipeline.html"><a href="diseño-de-la-pipeline.html"><i class="fa fa-check"></i><b>4.2</b> Diseño de la Pipeline</a></li>
-<li class="chapter" data-level="4.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html"><i class="fa fa-check"></i><b>4.3</b> Desarrollo de la Pipeline</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#extracción-extract"><i class="fa fa-check"></i><b>4.3.1</b> Extracción (extract)</a></li>
-<li class="chapter" data-level="4.3.2" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#transformación-transform"><i class="fa fa-check"></i><b>4.3.2</b> Transformación (transform)</a></li>
-<li class="chapter" data-level="4.3.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#carga-load"><i class="fa fa-check"></i><b>4.3.3</b> Carga (load)</a></li>
-<li class="chapter" data-level="4.3.4" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#arquitectura-final-y-gestión-de-su-actualización"><i class="fa fa-check"></i><b>4.3.4</b> Arquitectura final y gestión de su actualización</a></li>
+<li class="chapter" data-level="3.2" data-path="diseño-de-la-pipeline.html"><a href="diseño-de-la-pipeline.html"><i class="fa fa-check"></i><b>3.2</b> Diseño de la Pipeline</a></li>
+<li class="chapter" data-level="3.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html"><i class="fa fa-check"></i><b>3.3</b> Desarrollo de la Pipeline</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#extracción-extract"><i class="fa fa-check"></i><b>3.3.1</b> Extracción (extract)</a></li>
+<li class="chapter" data-level="3.3.2" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#transformación-transform"><i class="fa fa-check"></i><b>3.3.2</b> Transformación (transform)</a></li>
+<li class="chapter" data-level="3.3.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#carga-load"><i class="fa fa-check"></i><b>3.3.3</b> Carga (load)</a></li>
+<li class="chapter" data-level="3.3.4" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#arquitectura-final-y-gestión-de-su-actualización"><i class="fa fa-check"></i><b>3.3.4</b> Arquitectura final y gestión de su actualización</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html"><i class="fa fa-check"></i><b>4.4</b> Gráficos Interactivos</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#introducción-2"><i class="fa fa-check"></i><b>4.4.1</b> Introducción</a></li>
-<li class="chapter" data-level="4.4.2" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#componentes"><i class="fa fa-check"></i><b>4.4.2</b> Componentes</a></li>
-<li class="chapter" data-level="4.4.3" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#reactividad-en-shiny-qué-es-y-cómo-aprovecharla"><i class="fa fa-check"></i><b>4.4.3</b> Reactividad en Shiny: qué es y cómo aprovecharla</a></li>
+<li class="chapter" data-level="3.4" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html"><i class="fa fa-check"></i><b>3.4</b> Gráficos Interactivos</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#introducción-1"><i class="fa fa-check"></i><b>3.4.1</b> Introducción</a></li>
+<li class="chapter" data-level="3.4.2" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#componentes"><i class="fa fa-check"></i><b>3.4.2</b> Componentes</a></li>
+<li class="chapter" data-level="3.4.3" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#reactividad-en-shiny-qué-es-y-cómo-aprovecharla"><i class="fa fa-check"></i><b>3.4.3</b> Reactividad en Shiny: qué es y cómo aprovecharla</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html"><i class="fa fa-check"></i><b>4.5</b> Desarrollo de la aplicación en Shiny</a><ul>
-<li class="chapter" data-level="4.5.1" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-de-librerías"><i class="fa fa-check"></i><b>4.5.1</b> Carga de librerías</a></li>
-<li class="chapter" data-level="4.5.2" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#creación-de-funciones"><i class="fa fa-check"></i><b>4.5.2</b> Creación de funciones</a></li>
-<li class="chapter" data-level="4.5.3" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-y-transformación-de-los-datos"><i class="fa fa-check"></i><b>4.5.3</b> Carga y transformación de los datos</a></li>
-<li class="chapter" data-level="4.5.4" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-la-interfaz-de-usuario"><i class="fa fa-check"></i><b>4.5.4</b> Desarrollo de la interfaz de usuario</a></li>
-<li class="chapter" data-level="4.5.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-los-gráficos-y-de-la-reactividad"><i class="fa fa-check"></i><b>4.5.5</b> Desarrollo de los gráficos y de la reactividad</a></li>
-<li class="chapter" data-level="4.5.6" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#publicación-de-la-aplicación"><i class="fa fa-check"></i><b>4.5.6</b> Publicación de la aplicación</a></li>
+<li class="chapter" data-level="3.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html"><i class="fa fa-check"></i><b>3.5</b> Desarrollo de la aplicación en Shiny</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-de-librerías"><i class="fa fa-check"></i><b>3.5.1</b> Carga de librerías</a></li>
+<li class="chapter" data-level="3.5.2" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#creación-de-funciones"><i class="fa fa-check"></i><b>3.5.2</b> Creación de funciones</a></li>
+<li class="chapter" data-level="3.5.3" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-y-transformación-de-los-datos"><i class="fa fa-check"></i><b>3.5.3</b> Carga y transformación de los datos</a></li>
+<li class="chapter" data-level="3.5.4" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-la-interfaz-de-usuario"><i class="fa fa-check"></i><b>3.5.4</b> Desarrollo de la interfaz de usuario</a></li>
+<li class="chapter" data-level="3.5.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-los-gráficos-y-de-la-reactividad"><i class="fa fa-check"></i><b>3.5.5</b> Desarrollo de los gráficos y de la reactividad</a></li>
+<li class="chapter" data-level="3.5.6" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#publicación-de-la-aplicación"><i class="fa fa-check"></i><b>3.5.6</b> Publicación de la aplicación</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="aspecto-final.html"><a href="aspecto-final.html"><i class="fa fa-check"></i><b>4.6</b> Aspecto Final</a></li>
+<li class="chapter" data-level="3.6" data-path="aspecto-final.html"><a href="aspecto-final.html"><i class="fa fa-check"></i><b>3.6</b> Aspecto Final</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="conclusión.html"><a href="conclusión.html"><i class="fa fa-check"></i><b>5</b> Conclusión</a><ul>
-<li class="chapter" data-level="5.1" data-path="aprendizajes.html"><a href="aprendizajes.html"><i class="fa fa-check"></i><b>5.1</b> Aprendizajes</a></li>
-<li class="chapter" data-level="5.2" data-path="a-mejorar.html"><a href="a-mejorar.html"><i class="fa fa-check"></i><b>5.2</b> A mejorar</a></li>
+<li class="chapter" data-level="4" data-path="conclusión.html"><a href="conclusión.html"><i class="fa fa-check"></i><b>4</b> Conclusión</a><ul>
+<li class="chapter" data-level="4.1" data-path="aprendizajes.html"><a href="aprendizajes.html"><i class="fa fa-check"></i><b>4.1</b> Aprendizajes</a></li>
+<li class="chapter" data-level="4.2" data-path="a-mejorar.html"><a href="a-mejorar.html"><i class="fa fa-check"></i><b>4.2</b> A mejorar</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="índice-de-figuras.html"><a href="índice-de-figuras.html"><i class="fa fa-check"></i><b>6</b> Índice de figuras</a></li>
-<li class="chapter" data-level="7" data-path="código.html"><a href="código.html"><i class="fa fa-check"></i><b>7</b> Código</a><ul>
-<li class="chapter" data-level="7.1" data-path="desarrollo-de-la-etl-pipeline.html"><a href="desarrollo-de-la-etl-pipeline.html"><i class="fa fa-check"></i><b>7.1</b> Desarrollo de la ETL Pipeline</a></li>
-<li class="chapter" data-level="7.2" data-path="desarrollo-de-la-aplicación-en-shiny-1.html"><a href="desarrollo-de-la-aplicación-en-shiny-1.html"><i class="fa fa-check"></i><b>7.2</b> Desarrollo de la aplicación en Shiny</a></li>
+<li class="chapter" data-level="5" data-path="índice-de-figuras.html"><a href="índice-de-figuras.html"><i class="fa fa-check"></i><b>5</b> Índice de figuras</a></li>
+<li class="chapter" data-level="6" data-path="código.html"><a href="código.html"><i class="fa fa-check"></i><b>6</b> Código</a><ul>
+<li class="chapter" data-level="6.1" data-path="desarrollo-de-la-etl-pipeline.html"><a href="desarrollo-de-la-etl-pipeline.html"><i class="fa fa-check"></i><b>6.1</b> Desarrollo de la ETL Pipeline</a></li>
+<li class="chapter" data-level="6.2" data-path="desarrollo-de-la-aplicación-en-shiny-1.html"><a href="desarrollo-de-la-aplicación-en-shiny-1.html"><i class="fa fa-check"></i><b>6.2</b> Desarrollo de la aplicación en Shiny</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 </ul>
@@ -238,7 +214,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="desarrollo-de-la-aplicación-en-shiny" class="section level2">
-<h2><span class="header-section-number">4.5</span> Desarrollo de la aplicación en Shiny</h2>
+<h2><span class="header-section-number">3.5</span> Desarrollo de la aplicación en Shiny</h2>
 <p>A continuación ilustraremos, sin entrar en un gran nivel de detalle, el proceso de desarrollo de la aplicación en <em>Shiny</em>. Para los que deseen una mayor comprensión del proyecto, el código completo está disponible en la sección <em>7.2 Desarrollo de la aplicación en Shiny</em>.</p>
 <p>El desarrollo de una aplicación de <em>Shiny</em>, al igual que el desarrollo de una <em>ETL Pipeline</em>, se puede dividir en diferentes partes. Por lo general, <strong>estas secciones son:</strong></p>
 <ol style="list-style-type: decimal">
@@ -249,29 +225,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Desarrollo de los gráficos y de la reactividad (servidor).</p></li>
 </ol>
 <p>Siendo todavía más concisos, lo esencial de una aplicación <em>Shiny</em> es la interfaz de usuario y el servidor, <em>ui</em> y <em>server</em>. Con estos dos componentes somos capaces de desarrollar una aplicación de <em>Shiny</em>. <strong>El código que se muestra a continuación es todo lo que necesitamos.</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">library</span>(shiny)</a>
-<a class="sourceLine" id="cb5-2" title="2"></a>
-<a class="sourceLine" id="cb5-3" title="3">ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</a>
-<a class="sourceLine" id="cb5-4" title="4">    <span class="kw">titlePanel</span>(<span class="st">&quot;¡Hola Mundo!&quot;</span>),</a>
-<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">mainPanel</span>(</a>
-<a class="sourceLine" id="cb5-6" title="6">       <span class="kw">plotOutput</span>(<span class="st">&quot;distPlot&quot;</span>)</a>
-<a class="sourceLine" id="cb5-7" title="7">    )</a>
-<a class="sourceLine" id="cb5-8" title="8">)</a>
-<a class="sourceLine" id="cb5-9" title="9"></a>
-<a class="sourceLine" id="cb5-10" title="10">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output) {</a>
-<a class="sourceLine" id="cb5-11" title="11"></a>
-<a class="sourceLine" id="cb5-12" title="12">    output<span class="op">$</span>distPlot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({</a>
-<a class="sourceLine" id="cb5-13" title="13">        x    &lt;-<span class="st"> </span>faithful[, <span class="dv">2</span>]</a>
-<a class="sourceLine" id="cb5-14" title="14">        bins &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="kw">min</span>(x), <span class="kw">max</span>(x), <span class="dt">length.out =</span> <span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb5-15" title="15">        <span class="kw">hist</span>(x, <span class="dt">breaks =</span> bins)</a>
-<a class="sourceLine" id="cb5-16" title="16">    })</a>
-<a class="sourceLine" id="cb5-17" title="17">}</a>
-<a class="sourceLine" id="cb5-18" title="18"></a>
-<a class="sourceLine" id="cb5-19" title="19"><span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(shiny)</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3">ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">titlePanel</span>(<span class="st">&quot;¡Hola Mundo!&quot;</span>),</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="kw">mainPanel</span>(</a>
+<a class="sourceLine" id="cb1-6" title="6">       <span class="kw">plotOutput</span>(<span class="st">&quot;distPlot&quot;</span>)</a>
+<a class="sourceLine" id="cb1-7" title="7">    )</a>
+<a class="sourceLine" id="cb1-8" title="8">)</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output) {</a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12">    output<span class="op">$</span>distPlot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({</a>
+<a class="sourceLine" id="cb1-13" title="13">        x    &lt;-<span class="st"> </span>faithful[, <span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb1-14" title="14">        bins &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="kw">min</span>(x), <span class="kw">max</span>(x), <span class="dt">length.out =</span> <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-15" title="15">        <span class="kw">hist</span>(x, <span class="dt">breaks =</span> bins)</a>
+<a class="sourceLine" id="cb1-16" title="16">    })</a>
+<a class="sourceLine" id="cb1-17" title="17">}</a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</a></code></pre></div>
 <p>Como podemos ver de forma intuitiva mediante el código, a través de <em>ui</em> indicamos dónde vamos a colocar los componentes de nuestra aplicación. En el ejemplo, estamos señalando cómo queremos añadir el gráfico <strong>“distPlot”</strong> al panel principal, <strong>mainPanel</strong>.</p>
 <p>Será en <em>server</em> donde desarrollemos este gráfico, siempre añadiendo el prefijo <em>output$</em> al nombre del componente, ya que queremos que su resultado se muestre en la <em>ui</em> al usuario.</p>
 <div id="carga-de-librerías" class="section level3">
-<h3><span class="header-section-number">4.5.1</span> Carga de librerías</h3>
+<h3><span class="header-section-number">3.5.1</span> Carga de librerías</h3>
 <p>Para empezar, cargamos en memoria las librerías que vamos a utilizar en la aplicación. Podemos agrupar estas librerías en tres categorías:</p>
 <ul>
 <li><p><strong>Relacionadas con la visualización de datos.</strong> Estas serían <em>plotly</em> (gráficos interactivos), <em>leaflet</em> (mapas interactivos), <em>leaflet.extras</em> (añade funcionalidad a <em>leaflet</em>) y <em>DT</em> (tablas interactivas). Hemos decidido incluir aquí <em>tidyverse</em>, que es en sí misma una agrupación de las librerías más utilizadas, ya que contiene <em>ggplot2</em>, la librería para gráficos externa de <strong><em>R</em></strong> más conocida, aunque también contiene librerías de transformación de datos como <em>dplyr</em>.</p></li>
@@ -280,7 +256,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="creación-de-funciones" class="section level3">
-<h3><span class="header-section-number">4.5.2</span> Creación de funciones</h3>
+<h3><span class="header-section-number">3.5.2</span> Creación de funciones</h3>
 <p>En lo que a funciones se refiere, crearemos 4 (y una variable) que también pueden ser subdivididas:</p>
 <ul>
 <li><p>Utilizaremos <em>toMoney</em> y <em>toPercentage</em> para transformar variables numéricas en variables asociadas a dinero (_ de 5.0 a 5.0€ <em>) y porcentaje (</em> de 0.5 a 50% _), respectivamente. Su propósito será estético, ya que únicamente cambiará cómo el usuario ve esa información.</p></li>
@@ -290,59 +266,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="figure"><span id="fig:pantallaAutentificacion"></span>
 <img src="images/pantallaAutentificacion.jpg" alt="Pantalla de autentificación para acceder a la aplicación."  />
 <p class="caption">
-Figura 4.11: Pantalla de autentificación para acceder a la aplicación.
+Figura 3.2: Pantalla de autentificación para acceder a la aplicación.
 </p>
 </div>
 </div>
 <div id="carga-y-transformación-de-los-datos" class="section level3">
-<h3><span class="header-section-number">4.5.3</span> Carga y transformación de los datos</h3>
+<h3><span class="header-section-number">3.5.3</span> Carga y transformación de los datos</h3>
 <p>En esta etapa de la aplicación nos encargamos de cargar todos los datos de los que vamos a hacer uso, así como transformarlos para poder explotarlos de la manera que deseamos. Cabe señalar que la transformación aquí es mínima, y normalmente consiste en añadir variables que necesitan de agrupaciones dinámicas, etc. La parte más extensa de transformación de datos es delegada, como ya bien sabemos, a la <em>ETL Pipeline</em>.</p>
 <p><strong>Una vez los datos ya han sido cargados y transformados, estamos listos para empezar a desarrollar los componentes principales de la aplicación.</strong></p>
 </div>
 <div id="desarrollo-de-la-interfaz-de-usuario" class="section level3">
-<h3><span class="header-section-number">4.5.4</span> Desarrollo de la interfaz de usuario</h3>
+<h3><span class="header-section-number">3.5.4</span> Desarrollo de la interfaz de usuario</h3>
 <p><strong>El desarrollo de la interfaz de usuario consiste en diseñar cómo el usuario va a comunicarse con el producto que quieres desarrollar, en nuestro caso la aplicación.</strong></p>
 <p>Hemos optado por desarrollar una interfaz sencilla, con los filtros disponibles en una columna desplegable a la izquierda, dejando en la pantalla principal únicamente los gráficos interactivos. Para ello, hacemos uso de la librería <em>shinydashboard</em> y sus funciones <em>dashboardPage</em> (aplicación en sí), <em>dashboardHeader</em> (aquí introduciremos el logo de <strong>homyspace</strong>), <em>dashboardBody</em> (en esta función introduciremos los gráficos) y <em>dashboardSidebar</em> (aquí insertaremos los filtros).</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">title &lt;-<span class="st"> </span>tags<span class="op">$</span><span class="kw">a</span>(<span class="dt">href=</span><span class="st">&quot;homyspace.com&quot;</span>,</a>
-<a class="sourceLine" id="cb6-2" title="2">                tags<span class="op">$</span><span class="kw">img</span>(<span class="dt">src=</span><span class="st">&quot;http://homybrain.com/img/logo.png&quot;</span>, <span class="dt">width =</span> <span class="st">&quot;200&quot;</span>))</a>
-<a class="sourceLine" id="cb6-3" title="3"></a>
-<a class="sourceLine" id="cb6-4" title="4">ui &lt;-<span class="st"> </span><span class="kw">secure_app</span>(</a>
-<a class="sourceLine" id="cb6-5" title="5">  <span class="dt">theme =</span> shinythemes<span class="op">::</span><span class="kw">shinytheme</span>(<span class="st">&quot;flatly&quot;</span>),</a>
-<a class="sourceLine" id="cb6-6" title="6">  <span class="kw">dashboardPage</span>(</a>
-<a class="sourceLine" id="cb6-7" title="7">    <span class="dt">title =</span> <span class="st">&quot;homyspace&quot;</span>,</a>
-<a class="sourceLine" id="cb6-8" title="8">    <span class="kw">dashboardHeader</span>(<span class="dt">title =</span> title),</a>
-<a class="sourceLine" id="cb6-9" title="9">    <span class="kw">dashboardSidebar</span>(</a>
-<a class="sourceLine" id="cb6-10" title="10">    ),</a>
-<a class="sourceLine" id="cb6-11" title="11">    <span class="kw">dashboardBody</span>(</a>
-<a class="sourceLine" id="cb6-12" title="12">      tags<span class="op">$</span><span class="kw">head</span>(tags<span class="op">$</span><span class="kw">style</span>(<span class="kw">HTML</span>(<span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb6-13" title="13"><span class="st">        .skin-blue .main-header .logo {</span></a>
-<a class="sourceLine" id="cb6-14" title="14"><span class="st">          font-family: &quot;Nexa Bold&quot;;</span></a>
-<a class="sourceLine" id="cb6-15" title="15"><span class="st">          font-size: 24px;</span></a>
-<a class="sourceLine" id="cb6-16" title="16"><span class="st">          color: #000000;</span></a>
-<a class="sourceLine" id="cb6-17" title="17"><span class="st">          background-color: #eeaf30;</span></a>
-<a class="sourceLine" id="cb6-18" title="18"><span class="st">        }</span></a>
-<a class="sourceLine" id="cb6-19" title="19"><span class="st">   </span></a>
-<a class="sourceLine" id="cb6-20" title="20"><span class="st">        /* navbar (rest of the header) */</span></a>
-<a class="sourceLine" id="cb6-21" title="21"><span class="st">        .skin-blue .main-header .navbar {</span></a>
-<a class="sourceLine" id="cb6-22" title="22"><span class="st">        background-color: #eeaf30;</span></a>
-<a class="sourceLine" id="cb6-23" title="23"><span class="st">        color: #000000;</span></a>
-<a class="sourceLine" id="cb6-24" title="24"><span class="st">        }</span></a>
-<a class="sourceLine" id="cb6-25" title="25"><span class="st">      &#39;</span>))),</a>
-<a class="sourceLine" id="cb6-26" title="26">    )</a>
-<a class="sourceLine" id="cb6-27" title="27">  )</a>
-<a class="sourceLine" id="cb6-28" title="28">)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">title &lt;-<span class="st"> </span>tags<span class="op">$</span><span class="kw">a</span>(<span class="dt">href=</span><span class="st">&quot;homyspace.com&quot;</span>,</a>
+<a class="sourceLine" id="cb2-2" title="2">                tags<span class="op">$</span><span class="kw">img</span>(<span class="dt">src=</span><span class="st">&quot;http://homybrain.com/img/logo.png&quot;</span>, <span class="dt">width =</span> <span class="st">&quot;200&quot;</span>))</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4">ui &lt;-<span class="st"> </span><span class="kw">secure_app</span>(</a>
+<a class="sourceLine" id="cb2-5" title="5">  <span class="dt">theme =</span> shinythemes<span class="op">::</span><span class="kw">shinytheme</span>(<span class="st">&quot;flatly&quot;</span>),</a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="kw">dashboardPage</span>(</a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="dt">title =</span> <span class="st">&quot;homyspace&quot;</span>,</a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">dashboardHeader</span>(<span class="dt">title =</span> title),</a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="kw">dashboardSidebar</span>(</a>
+<a class="sourceLine" id="cb2-10" title="10">    ),</a>
+<a class="sourceLine" id="cb2-11" title="11">    <span class="kw">dashboardBody</span>(</a>
+<a class="sourceLine" id="cb2-12" title="12">      tags<span class="op">$</span><span class="kw">head</span>(tags<span class="op">$</span><span class="kw">style</span>(<span class="kw">HTML</span>(<span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="st">        .skin-blue .main-header .logo {</span></a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="st">          font-family: &quot;Nexa Bold&quot;;</span></a>
+<a class="sourceLine" id="cb2-15" title="15"><span class="st">          font-size: 24px;</span></a>
+<a class="sourceLine" id="cb2-16" title="16"><span class="st">          color: #000000;</span></a>
+<a class="sourceLine" id="cb2-17" title="17"><span class="st">          background-color: #eeaf30;</span></a>
+<a class="sourceLine" id="cb2-18" title="18"><span class="st">        }</span></a>
+<a class="sourceLine" id="cb2-19" title="19"><span class="st">   </span></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="st">        /* navbar (rest of the header) */</span></a>
+<a class="sourceLine" id="cb2-21" title="21"><span class="st">        .skin-blue .main-header .navbar {</span></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="st">        background-color: #eeaf30;</span></a>
+<a class="sourceLine" id="cb2-23" title="23"><span class="st">        color: #000000;</span></a>
+<a class="sourceLine" id="cb2-24" title="24"><span class="st">        }</span></a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="st">      &#39;</span>))),</a>
+<a class="sourceLine" id="cb2-26" title="26">    )</a>
+<a class="sourceLine" id="cb2-27" title="27">  )</a>
+<a class="sourceLine" id="cb2-28" title="28">)</a></code></pre></div>
 <p>Con una estructura de la <em>ui</em> o <em>User Interface</em> (interfaz de usuario en inglés) como esta, logramos esta plantilla:</p>
 <div class="figure"><span id="fig:plantilla"></span>
 <img src="images/template.jpg" alt="Plantilla de las aplicaciones shiny utilizadas en homyspace."  />
 <p class="caption">
-Figura 4.12: Plantilla de las aplicaciones shiny utilizadas en homyspace.
+Figura 3.3: Plantilla de las aplicaciones shiny utilizadas en homyspace.
 </p>
 </div>
 <p></br></p>
 <p>Una vez establecida la plantilla, iremos rellenando cada una de sus partes con los componentes que deseemos.</p>
 </div>
 <div id="desarrollo-de-los-gráficos-y-de-la-reactividad" class="section level3">
-<h3><span class="header-section-number">4.5.5</span> Desarrollo de los gráficos y de la reactividad</h3>
+<h3><span class="header-section-number">3.5.5</span> Desarrollo de los gráficos y de la reactividad</h3>
 <p>Debido al carácter técnico de esta sección nos vamos a centrar no tanto en el desarrollo en sí, sino en diferentes consejos y pautas a seguir a la hora de realizar una aplicación en <em>Shiny</em>.</p>
 <ul>
 <li><p><strong>Seguimos una metodología basada en prueba y error.</strong> Cada vez que desarrollamos un nuevo componente, lo testeamos inmediatamente.</p></li>
@@ -352,13 +328,13 @@ Figura 4.12: Plantilla de las aplicaciones shiny utilizadas en homyspace.
 <p>Para aquellos interesados en profundizar más en el desarrollo de un servidor de <em>Shiny</em> para una aplicación utilizada en el mundo real, el código se encuentra en la sección <em>7.2 Desarrollo de la aplicación en Shiny</em>.</p>
 </div>
 <div id="publicación-de-la-aplicación" class="section level3">
-<h3><span class="header-section-number">4.5.6</span> Publicación de la aplicación</h3>
-<p>Una vez desarrollada la aplicación, es necesario publicarla en la web para que esté disponible para el equipo. <em>RStudio</em> nos proporciona un servicio gestionado de calidad llamado <em>shinyapps.io</em> <a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> donde alojaremos la aplicación.</p>
+<h3><span class="header-section-number">3.5.6</span> Publicación de la aplicación</h3>
+<p>Una vez desarrollada la aplicación, es necesario publicarla en la web para que esté disponible para el equipo. <em>RStudio</em> nos proporciona un servicio gestionado de calidad llamado <em>shinyapps.io</em> <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> donde alojaremos la aplicación.</p>
 <p>Para ello nos registraremos en <em>shinyapps.io</em> y nos identificaremos a través de <em>RStudio</em>.</p>
 <div class="figure"><span id="fig:publicacion"></span>
 <img src="images/publicacionShiny.jpg" alt="Pantalla que vemos en el proceso de publicación de la aplicación."  />
 <p class="caption">
-Figura 4.13: Pantalla que vemos en el proceso de publicación de la aplicación.
+Figura 3.4: Pantalla que vemos en el proceso de publicación de la aplicación.
 </p>
 </div>
 <p>Tras haber realizado este paso, ya podemos afirmar que nuestra aplicación está lista para ser lanzada. No obstante, esto es <strong>sólo el principio</strong>. Una vez ha sido lanzada, tendremos que seguir los pasos indicados en la sección <em>3.4.1 Métodos para la difusión del uso de la aplicación</em>.</p>
@@ -367,8 +343,8 @@ Figura 4.13: Pantalla que vemos en el proceso de publicación de la aplicación.
 </div>
 <div class="footnotes">
 <hr />
-<ol start="8">
-<li id="fn8"><p><a href="https://www.shinyapps.io/">shinyapps.io</a><a href="desarrollo-de-la-aplicación-en-shiny.html#fnref8" class="footnote-back">↩</a></p></li>
+<ol start="2">
+<li id="fn2"><p><a href="https://www.shinyapps.io/">shinyapps.io</a><a href="desarrollo-de-la-aplicación-en-shiny.html#fnref2" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
