@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</title>
+  <meta name="description" content="3 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Aplicación de gráficos interactivos para la toma de decisiones | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  
+  
+  
+
+<meta name="author" content="Juan Ramos Hernández, Grado en Administración y dirección de Empresas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="objetivos-específicos.html"/>
+<link rel="next" href="qué-es-un-gráfico-interactivo.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/lfx-heat-0.1.0/lfx-heat-prod.js"></script>
+<script src="libs/lfx-heat-0.1.0/lfx-heat-bindings.js"></script>
+<script src="libs/plotly-binding-4.9.2/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<script src="libs/fuse_js-3.2.0/fuse_js-prod.js"></script>
+<link href="libs/lfx-search-2.3.7/lfx-search-prod.css" rel="stylesheet" />
+<script src="libs/lfx-search-2.3.7/lfx-search-prod.js"></script>
+<script src="libs/lfx-search-2.3.7/lfx-search-bindings.js"></script>
+<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="resumen.html"><a href="resumen.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="qué-es-homyspace.html"><a href="qué-es-homyspace.html"><i class="fa fa-check"></i><b>1.1</b> ¿Qué es homyspace?</a></li>
+<li class="chapter" data-level="1.2" data-path="definiciones.html"><a href="definiciones.html"><i class="fa fa-check"></i><b>1.2</b> Definiciones</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-el-mundo-start-up"><i class="fa fa-check"></i><b>1.2.1</b> Conceptos relacionados con el mundo start-up</a></li>
+<li class="chapter" data-level="1.2.2" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-homyspace"><i class="fa fa-check"></i><b>1.2.2</b> Conceptos relacionados con homyspace</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html"><i class="fa fa-check"></i><b>1.3</b> Flujo de trabajo de homyspace</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-proveedores"><i class="fa fa-check"></i><b>1.3.1</b> Flujo de Proveedores</a></li>
+<li class="chapter" data-level="1.3.2" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-empresas"><i class="fa fa-check"></i><b>1.3.2</b> Flujo de Empresas</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="objetivos.html"><a href="objetivos.html"><i class="fa fa-check"></i><b>2</b> Objetivos</a><ul>
+<li class="chapter" data-level="2.1" data-path="objetivo-general.html"><a href="objetivo-general.html"><i class="fa fa-check"></i><b>2.1</b> Objetivo General</a></li>
+<li class="chapter" data-level="2.2" data-path="objetivos-específicos.html"><a href="objetivos-específicos.html"><i class="fa fa-check"></i><b>2.2</b> Objetivos Específicos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><i class="fa fa-check"></i><b>3</b> Aplicación de gráficos interactivos para la toma de decisiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="qué-es-un-gráfico-interactivo.html"><a href="qué-es-un-gráfico-interactivo.html"><i class="fa fa-check"></i><b>3.1</b> ¿Qué es un gráfico interactivo?</a></li>
+<li class="chapter" data-level="3.2" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><i class="fa fa-check"></i><b>3.2</b> Ventajas de los gráficos interactivos frente a los estáticos</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html#inconvenientes-de-los-gráficos-interactivos"><i class="fa fa-check"></i><b>3.2.1</b> Inconvenientes de los gráficos interactivos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><i class="fa fa-check"></i><b>3.3</b> Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes</a></li>
+<li class="chapter" data-level="3.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html"><i class="fa fa-check"></i><b>3.4</b> Aplicación en el equipo de proveedores</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#métodos-para-la-difusión-del-uso-de-la-aplicación"><i class="fa fa-check"></i><b>3.4.1</b> Métodos para la difusión del uso de la aplicación</a></li>
+<li class="chapter" data-level="3.4.2" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#captación"><i class="fa fa-check"></i><b>3.4.2</b> Captación</a></li>
+<li class="chapter" data-level="3.4.3" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#negociación"><i class="fa fa-check"></i><b>3.4.3</b> Negociación</a></li>
+<li class="chapter" data-level="3.4.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#curación"><i class="fa fa-check"></i><b>3.4.4</b> Curación</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="aplicación-como-herramienta-de-inversión.html"><a href="aplicación-como-herramienta-de-inversión.html"><i class="fa fa-check"></i><b>3.5</b> Aplicación como herramienta de inversión</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html"><i class="fa fa-check"></i><b>4</b> Desarrollo de la aplicación</a><ul>
+<li class="chapter" data-level="4.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html"><i class="fa fa-check"></i><b>4.1</b> Fuente de datos</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#introducción-1"><i class="fa fa-check"></i><b>4.1.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.1.2" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#etl-pipeline-definición"><i class="fa fa-check"></i><b>4.1.2</b> ETL Pipeline: Definición</a></li>
+<li class="chapter" data-level="4.1.3" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#orígenes-de-datos"><i class="fa fa-check"></i><b>4.1.3</b> Orígenes de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="diseño-de-la-pipeline.html"><a href="diseño-de-la-pipeline.html"><i class="fa fa-check"></i><b>4.2</b> Diseño de la Pipeline</a></li>
+<li class="chapter" data-level="4.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html"><i class="fa fa-check"></i><b>4.3</b> Desarrollo de la Pipeline</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#extracción-extract"><i class="fa fa-check"></i><b>4.3.1</b> Extracción (extract)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#transformación-transform"><i class="fa fa-check"></i><b>4.3.2</b> Transformación (transform)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#carga-load"><i class="fa fa-check"></i><b>4.3.3</b> Carga (load)</a></li>
+<li class="chapter" data-level="4.3.4" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#arquitectura-final-y-gestión-de-su-actualización"><i class="fa fa-check"></i><b>4.3.4</b> Arquitectura final y gestión de su actualización</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html"><i class="fa fa-check"></i><b>4.4</b> Gráficos Interactivos</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#introducción-2"><i class="fa fa-check"></i><b>4.4.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.4.2" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#componentes"><i class="fa fa-check"></i><b>4.4.2</b> Componentes</a></li>
+<li class="chapter" data-level="4.4.3" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#reactividad-en-shiny-qué-es-y-cómo-aprovecharla"><i class="fa fa-check"></i><b>4.4.3</b> Reactividad en Shiny: qué es y cómo aprovecharla</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html"><i class="fa fa-check"></i><b>4.5</b> Desarrollo de la aplicación en Shiny</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-de-librerías"><i class="fa fa-check"></i><b>4.5.1</b> Carga de librerías</a></li>
+<li class="chapter" data-level="4.5.2" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#creación-de-funciones"><i class="fa fa-check"></i><b>4.5.2</b> Creación de funciones</a></li>
+<li class="chapter" data-level="4.5.3" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-y-transformación-de-los-datos"><i class="fa fa-check"></i><b>4.5.3</b> Carga y transformación de los datos</a></li>
+<li class="chapter" data-level="4.5.4" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-la-interfaz-de-usuario"><i class="fa fa-check"></i><b>4.5.4</b> Desarrollo de la interfaz de usuario</a></li>
+<li class="chapter" data-level="4.5.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-los-gráficos-y-de-la-reactividad"><i class="fa fa-check"></i><b>4.5.5</b> Desarrollo de los gráficos y de la reactividad</a></li>
+<li class="chapter" data-level="4.5.6" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#publicación-de-la-aplicación"><i class="fa fa-check"></i><b>4.5.6</b> Publicación de la aplicación</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="aspecto-final.html"><a href="aspecto-final.html"><i class="fa fa-check"></i><b>4.6</b> Aspecto Final</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusión.html"><a href="conclusión.html"><i class="fa fa-check"></i><b>5</b> Conclusión</a><ul>
+<li class="chapter" data-level="5.1" data-path="aprendizajes.html"><a href="aprendizajes.html"><i class="fa fa-check"></i><b>5.1</b> Aprendizajes</a></li>
+<li class="chapter" data-level="5.2" data-path="a-mejorar.html"><a href="a-mejorar.html"><i class="fa fa-check"></i><b>5.2</b> A mejorar</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="índice-de-figuras.html"><a href="índice-de-figuras.html"><i class="fa fa-check"></i><b>6</b> Índice de figuras</a></li>
+<li class="chapter" data-level="7" data-path="código.html"><a href="código.html"><i class="fa fa-check"></i><b>7</b> Código</a><ul>
+<li class="chapter" data-level="7.1" data-path="desarrollo-de-la-etl-pipeline.html"><a href="desarrollo-de-la-etl-pipeline.html"><i class="fa fa-check"></i><b>7.1</b> Desarrollo de la ETL Pipeline</a></li>
+<li class="chapter" data-level="7.2" data-path="desarrollo-de-la-aplicación-en-shiny-1.html"><a href="desarrollo-de-la-aplicación-en-shiny-1.html"><i class="fa fa-check"></i><b>7.2</b> Desarrollo de la aplicación en Shiny</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones" class="section level1">
+<h1><span class="header-section-number">3</span> Aplicación de gráficos interactivos para la toma de decisiones</h1>
+<div class="figure"><span id="fig:graficoPortadaInteractivos"></span>
+<div id="htmlwidget-a4fbbe0cbcc6001f74a8" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a4fbbe0cbcc6001f74a8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[39.48,-0.37],12,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addHeatmap","args":[[[39.4627673,-0.342958500000009,5],[39.4713815,-0.402688200000057,5],[39.4907443,-0.39532829999996,5],[39.4716431,-0.378465000000006,5],[39.4699925,-0.404179900000031,5],[39.4725339,-0.375804499999958,5],[39.4549761,-0.359903099999997,5],[39.4595471,-0.364246900000012,5],[39.471587,-0.3765181,5],[39.4699925,-0.404179900000031,5],[39.4767701,-0.3769384,5],[39.469557809005,-0.33356971720127,5],[39.4570462,-0.371174800000063,5],[39.4651027,-0.37481019999996,5],[39.4695394,-0.333538299999987,5],[39.4627527,-0.381997599999977,5],[39.5033084,-0.417407599999933,5],[39.4713815,-0.402688200000057,5],[39.4745579,-0.3852988,5],[39.466302,-0.32967189999999,5],[39.45586,-0.35632,5],[39.467572,-0.392160099999955,5],[39.447938,-0.37997919999998,5],[39.463997273649,-0.33299624919891,5],[39.4642655,-0.395461599999976,5],[39.4586101,-0.343886600000019,5],[39.4637991,-0.392257800000039,5],[39.4586101,-0.343886600000019,5],[39.4627673,-0.342958500000009,5],[39.4643097,-0.330557799999951,5],[39.4699075,-0.3762881,5],[39.4786258,-0.327288299999964,5],[39.5033084,-0.417407599999933,5],[39.4633139,-0.401353900000004,5],[39.4643612,-0.330542899999955,5],[39.4570462,-0.371174800000063,5],[39.4637538,-0.37104260000001,5],[39.4466507,-0.379921800000034,5],[39.472707,-0.377756299999987,5],[39.475165,-0.378627400000028,5],[39.4587066,-0.33461669999997,5],[39.4664419,-0.37954239999999,5],[39.4907443,-0.39532829999996,5],[39.447938,-0.37997919999998,5],[39.4747898,-0.330088100000012,5],[39.5033084,-0.417407599999933,5],[39.4536556,-0.39154880000001,5],[39.4616818,-0.356189,5],[39.471955169864,-0.33642485912878,5],[39.4612185,-0.3774485,5],[39.4670349,-0.3725766,5],[39.4612185,-0.3774485,5],[39.4770554,-0.374101300000007,5],[39.4614581,-0.3611219,5],[39.4724088,-0.333324100000027,5],[39.4878099,-0.374094600000035,5],[39.4627673,-0.342958500000009,5],[39.4891634,-0.375114499999995,5],[39.4761826,-0.375615000000039,5],[39.4761826,-0.375615000000039,5],[39.4612185,-0.3774485,5],[39.4578098,-0.383381699999973,5],[39.4713815,-0.402688200000057,5],[39.47007,-0.34680000000003,5],[39.4570462,-0.371174800000063,5],[39.4797474,-0.377445200000011,5],[39.4739838,-0.32798419999995,5],[39.467746,-0.329802400000062,5],[39.469557809005,-0.33356971720127,5],[39.467572,-0.392160099999955,5],[39.4549761,-0.359903099999997,5],[39.4628133,-0.3819176,5],[39.4674191,-0.353035399999953,5],[39.4604224,-0.413460399999963,5],[39.4726624,-0.384713499999975,5],[39.4675166,-0.35734960000002,5],[39.4570003,-0.357606900000064,5],[39.467572,-0.392160099999955,5],[39.4679407,-0.371541799999932,5],[39.4553367,-0.3587922,5],[39.467572,-0.392160099999955,5],[39.4532407,-0.38914879999993,5],[39.4627527,-0.381997599999977,5],[39.4627673,-0.342958500000009,5],[39.4595471,-0.364246900000012,5],[39.4637538,-0.37104260000001,5],[39.4648712,-0.336909399999968,5],[39.471406,-0.3784811,5],[39.4907443,-0.39532829999996,5],[39.4540474,-0.392939500000011,5],[39.4727929,-0.34546679999994,5],[39.458061,-0.385411900000008,5],[39.4769883,-0.3778709,5],[39.4612448,-0.343674800000031,5],[39.4725855,-0.384730999999988,5],[39.4699925,-0.404179900000031,5],[39.4621428,-0.368748500000038,5],[39.485944,-0.372887600000013,5],[39.477792,-0.326666799999998,5],[39.4627527,-0.381997599999977,5],[39.4549761,-0.359903099999997,5],[39.4600283,-0.361359900000025,5],[39.4700657,-0.328570200000058,5],[39.4549761,-0.359903099999997,5],[39.4727028,-0.375529400000005,5],[39.4724248,-0.331006399999978,5],[39.4600204,-0.332952400000067,5],[39.4570003,-0.357606900000064,5],[39.475165,-0.378627400000028,5],[39.4761826,-0.375615000000039,5],[39.4579646,-0.375869100000045,5],[39.5033084,-0.417407599999933,5],[39.5033084,-0.417407599999933,5],[39.4622709,-0.37707230000001,5],[39.4772527,-0.37395319999996,5],[39.4622709,-0.37707230000001,5],[39.4571827,-0.344560900000033,5],[39.4655618,-0.408437700000036,5],[39.4633139,-0.401353900000004,5],[39.4745403,-0.387021799999957,5],[39.4744921,-0.376137599999993,5],[39.4576739,-0.359225400000014,5],[39.4724088,-0.333324100000027,5],[39.4724088,-0.333324100000027,5],[39.4884237,-0.378690199999937,5],[39.4633139,-0.401353900000004,5],[39.4798947,-0.371002,5],[39.4638484,-0.391539800000032,5],[39.472707,-0.377756299999987,5],[39.4576739,-0.359225400000014,5],[39.447938,-0.37997919999998,5],[39.479682,-0.380435700000021,5],[39.4634885,-0.391327899999965,5],[39.4703602,-0.38564729999996,5],[39.460716884025,-0.39229068717191,5],[39.4618287,-0.342189400000052,5],[39.467572,-0.392160099999955,5],[39.4595471,-0.364246900000012,5],[39.4576739,-0.359225400000014,5],[39.565912231266,-0.2857375148443,5],[39.5033084,-0.417407599999933,5],[39.4570462,-0.371174800000063,5],[39.447938,-0.37997919999998,5],[39.4627673,-0.342958500000009,5],[39.4717534,-0.414681400000063,5],[39.4529524,-0.403340100000037,5],[39.455102,-0.39090090000002,5],[39.4600204,-0.332952400000067,5],[39.4778518,-0.3803135,5],[39.459663,-0.337647199999992,5],[39.4400938,-0.388644500000055,5],[39.4731461,-0.35455550000006,5],[39.4642655,-0.395461599999976,5],[39.4699925,-0.404179900000031,5],[39.4695394,-0.333538299999987,5],[39.4643097,-0.330557799999951,5],[39.4727929,-0.34546679999994,5],[39.479682,-0.380435700000021,5],[39.4699075,-0.3762881,5],[39.4633139,-0.401353900000004,5],[39.4788079,-0.374371500000052,5],[39.5033084,-0.417407599999933,5],[39.4824386,-0.32729180000001,5],[39.4762627,-0.325867900000048,5],[39.4523063,-0.333057000000053,5],[39.4713815,-0.402688200000057,5],[39.4570462,-0.371174800000063,5],[39.459316023839,-0.3691577911377,5],[39.4853084,-0.35721280000007,5],[39.4625254,-0.387461600000051,5],[39.4718596,-0.38231159999998,5],[39.4643097,-0.330557799999951,5],[39.4643097,-0.330557799999951,5],[39.4400938,-0.388644500000055,5],[39.4595471,-0.364246900000012,5],[39.4713815,-0.402688200000057,5],[39.4571827,-0.344560900000033,5],[39.4749066,-0.391883900000039,5],[39.455102,-0.39090090000002,5],[39.4466507,-0.379921800000034,5],[39.4576739,-0.359225400000014,5],[39.4627527,-0.381997599999977,5],[39.4548478,-0.381759299999999,5],[39.4699075,-0.3762881,5],[39.4716431,-0.378465000000006,5],[39.4627673,-0.342958500000009,5],[39.4529524,-0.403340100000037,5],[39.4695394,-0.333538299999987,5],[39.4643097,-0.330557799999951,5],[39.4627673,-0.342958500000009,5],[39.472707,-0.377756299999987,5],[39.4772918,-0.377120300000001,5],[39.455102,-0.39090090000002,5],[39.4727929,-0.34546679999994,5],[39.4622979,-0.367056300000058,5],[39.5033084,-0.417407599999933,5],[39.4713815,-0.402688200000057,5],[39.4761826,-0.375615000000039,5],[39.447938,-0.37997919999998,5],[39.4633139,-0.401353900000004,5]],null,7,{"minOpacity":0.05,"max":25,"radius":30,"blur":25,"cellSize":85}]}],"limits":{"lat":[39.4400938,39.565912231266],"lng":[-0.417407599999933,-0.2857375148443]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figura 3.1: Mapa de calor interactivo que muestra la densidad de inmuebles en Valencia.<br>Fuente: Elaboración propia para exponer las diferencias entre los gráficos estáticos e interactivos.
+</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="objetivos-específicos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="qué-es-un-gráfico-interactivo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

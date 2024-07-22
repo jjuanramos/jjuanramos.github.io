@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3.3 Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</title>
+  <meta name="description" content="3.3 Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3.3 Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3.3 Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes | Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica." />
+  
+  
+  
+
+<meta name="author" content="Juan Ramos Hernández, Grado en Administración y dirección de Empresas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"/>
+<link rel="next" href="aplicación-en-el-equipo-de-proveedores.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/lfx-heat-0.1.0/lfx-heat-prod.js"></script>
+<script src="libs/lfx-heat-0.1.0/lfx-heat-bindings.js"></script>
+<script src="libs/plotly-binding-4.9.2/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<script src="libs/fuse_js-3.2.0/fuse_js-prod.js"></script>
+<link href="libs/lfx-search-2.3.7/lfx-search-prod.css" rel="stylesheet" />
+<script src="libs/lfx-search-2.3.7/lfx-search-prod.js"></script>
+<script src="libs/lfx-search-2.3.7/lfx-search-bindings.js"></script>
+<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="resumen.html"><a href="resumen.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="qué-es-homyspace.html"><a href="qué-es-homyspace.html"><i class="fa fa-check"></i><b>1.1</b> ¿Qué es homyspace?</a></li>
+<li class="chapter" data-level="1.2" data-path="definiciones.html"><a href="definiciones.html"><i class="fa fa-check"></i><b>1.2</b> Definiciones</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-el-mundo-start-up"><i class="fa fa-check"></i><b>1.2.1</b> Conceptos relacionados con el mundo start-up</a></li>
+<li class="chapter" data-level="1.2.2" data-path="definiciones.html"><a href="definiciones.html#conceptos-relacionados-con-homyspace"><i class="fa fa-check"></i><b>1.2.2</b> Conceptos relacionados con homyspace</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html"><i class="fa fa-check"></i><b>1.3</b> Flujo de trabajo de homyspace</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-proveedores"><i class="fa fa-check"></i><b>1.3.1</b> Flujo de Proveedores</a></li>
+<li class="chapter" data-level="1.3.2" data-path="flujo-de-trabajo-de-homyspace.html"><a href="flujo-de-trabajo-de-homyspace.html#flujo-de-empresas"><i class="fa fa-check"></i><b>1.3.2</b> Flujo de Empresas</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="objetivos.html"><a href="objetivos.html"><i class="fa fa-check"></i><b>2</b> Objetivos</a><ul>
+<li class="chapter" data-level="2.1" data-path="objetivo-general.html"><a href="objetivo-general.html"><i class="fa fa-check"></i><b>2.1</b> Objetivo General</a></li>
+<li class="chapter" data-level="2.2" data-path="objetivos-específicos.html"><a href="objetivos-específicos.html"><i class="fa fa-check"></i><b>2.2</b> Objetivos Específicos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones.html"><i class="fa fa-check"></i><b>3</b> Aplicación de gráficos interactivos para la toma de decisiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="qué-es-un-gráfico-interactivo.html"><a href="qué-es-un-gráfico-interactivo.html"><i class="fa fa-check"></i><b>3.1</b> ¿Qué es un gráfico interactivo?</a></li>
+<li class="chapter" data-level="3.2" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><i class="fa fa-check"></i><b>3.2</b> Ventajas de los gráficos interactivos frente a los estáticos</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html"><a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html#inconvenientes-de-los-gráficos-interactivos"><i class="fa fa-check"></i><b>3.2.1</b> Inconvenientes de los gráficos interactivos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html"><i class="fa fa-check"></i><b>3.3</b> Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes</a></li>
+<li class="chapter" data-level="3.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html"><i class="fa fa-check"></i><b>3.4</b> Aplicación en el equipo de proveedores</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#métodos-para-la-difusión-del-uso-de-la-aplicación"><i class="fa fa-check"></i><b>3.4.1</b> Métodos para la difusión del uso de la aplicación</a></li>
+<li class="chapter" data-level="3.4.2" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#captación"><i class="fa fa-check"></i><b>3.4.2</b> Captación</a></li>
+<li class="chapter" data-level="3.4.3" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#negociación"><i class="fa fa-check"></i><b>3.4.3</b> Negociación</a></li>
+<li class="chapter" data-level="3.4.4" data-path="aplicación-en-el-equipo-de-proveedores.html"><a href="aplicación-en-el-equipo-de-proveedores.html#curación"><i class="fa fa-check"></i><b>3.4.4</b> Curación</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="aplicación-como-herramienta-de-inversión.html"><a href="aplicación-como-herramienta-de-inversión.html"><i class="fa fa-check"></i><b>3.5</b> Aplicación como herramienta de inversión</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="desarrollo-de-la-aplicación.html"><a href="desarrollo-de-la-aplicación.html"><i class="fa fa-check"></i><b>4</b> Desarrollo de la aplicación</a><ul>
+<li class="chapter" data-level="4.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html"><i class="fa fa-check"></i><b>4.1</b> Fuente de datos</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#introducción-1"><i class="fa fa-check"></i><b>4.1.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.1.2" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#etl-pipeline-definición"><i class="fa fa-check"></i><b>4.1.2</b> ETL Pipeline: Definición</a></li>
+<li class="chapter" data-level="4.1.3" data-path="fuente-de-datos.html"><a href="fuente-de-datos.html#orígenes-de-datos"><i class="fa fa-check"></i><b>4.1.3</b> Orígenes de datos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="diseño-de-la-pipeline.html"><a href="diseño-de-la-pipeline.html"><i class="fa fa-check"></i><b>4.2</b> Diseño de la Pipeline</a></li>
+<li class="chapter" data-level="4.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html"><i class="fa fa-check"></i><b>4.3</b> Desarrollo de la Pipeline</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#extracción-extract"><i class="fa fa-check"></i><b>4.3.1</b> Extracción (extract)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#transformación-transform"><i class="fa fa-check"></i><b>4.3.2</b> Transformación (transform)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#carga-load"><i class="fa fa-check"></i><b>4.3.3</b> Carga (load)</a></li>
+<li class="chapter" data-level="4.3.4" data-path="desarrollo-de-la-pipeline.html"><a href="desarrollo-de-la-pipeline.html#arquitectura-final-y-gestión-de-su-actualización"><i class="fa fa-check"></i><b>4.3.4</b> Arquitectura final y gestión de su actualización</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html"><i class="fa fa-check"></i><b>4.4</b> Gráficos Interactivos</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#introducción-2"><i class="fa fa-check"></i><b>4.4.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.4.2" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#componentes"><i class="fa fa-check"></i><b>4.4.2</b> Componentes</a></li>
+<li class="chapter" data-level="4.4.3" data-path="gráficos-interactivos.html"><a href="gráficos-interactivos.html#reactividad-en-shiny-qué-es-y-cómo-aprovecharla"><i class="fa fa-check"></i><b>4.4.3</b> Reactividad en Shiny: qué es y cómo aprovecharla</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html"><i class="fa fa-check"></i><b>4.5</b> Desarrollo de la aplicación en Shiny</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-de-librerías"><i class="fa fa-check"></i><b>4.5.1</b> Carga de librerías</a></li>
+<li class="chapter" data-level="4.5.2" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#creación-de-funciones"><i class="fa fa-check"></i><b>4.5.2</b> Creación de funciones</a></li>
+<li class="chapter" data-level="4.5.3" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#carga-y-transformación-de-los-datos"><i class="fa fa-check"></i><b>4.5.3</b> Carga y transformación de los datos</a></li>
+<li class="chapter" data-level="4.5.4" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-la-interfaz-de-usuario"><i class="fa fa-check"></i><b>4.5.4</b> Desarrollo de la interfaz de usuario</a></li>
+<li class="chapter" data-level="4.5.5" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#desarrollo-de-los-gráficos-y-de-la-reactividad"><i class="fa fa-check"></i><b>4.5.5</b> Desarrollo de los gráficos y de la reactividad</a></li>
+<li class="chapter" data-level="4.5.6" data-path="desarrollo-de-la-aplicación-en-shiny.html"><a href="desarrollo-de-la-aplicación-en-shiny.html#publicación-de-la-aplicación"><i class="fa fa-check"></i><b>4.5.6</b> Publicación de la aplicación</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="aspecto-final.html"><a href="aspecto-final.html"><i class="fa fa-check"></i><b>4.6</b> Aspecto Final</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusión.html"><a href="conclusión.html"><i class="fa fa-check"></i><b>5</b> Conclusión</a><ul>
+<li class="chapter" data-level="5.1" data-path="aprendizajes.html"><a href="aprendizajes.html"><i class="fa fa-check"></i><b>5.1</b> Aprendizajes</a></li>
+<li class="chapter" data-level="5.2" data-path="a-mejorar.html"><a href="a-mejorar.html"><i class="fa fa-check"></i><b>5.2</b> A mejorar</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="índice-de-figuras.html"><a href="índice-de-figuras.html"><i class="fa fa-check"></i><b>6</b> Índice de figuras</a></li>
+<li class="chapter" data-level="7" data-path="código.html"><a href="código.html"><i class="fa fa-check"></i><b>7</b> Código</a><ul>
+<li class="chapter" data-level="7.1" data-path="desarrollo-de-la-etl-pipeline.html"><a href="desarrollo-de-la-etl-pipeline.html"><i class="fa fa-check"></i><b>7.1</b> Desarrollo de la ETL Pipeline</a></li>
+<li class="chapter" data-level="7.2" data-path="desarrollo-de-la-aplicación-en-shiny-1.html"><a href="desarrollo-de-la-aplicación-en-shiny-1.html"><i class="fa fa-check"></i><b>7.2</b> Desarrollo de la aplicación en Shiny</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Herramientas de visualización interactivas para la toma de decisiones en una startup tecnológica.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes" class="section level2">
+<h2><span class="header-section-number">3.3</span> Aplicación de gráficos interactivos para la toma de decisiones: aspecto y componentes</h2>
+<p>Siguiendo una metodología <em>top-down</em>: empezamos utilizando un nivel de abstracción muy alto, donde mostraremos cómo se emplea la herramienta una vez ha sido creada. Veremos el uso actual por parte del equipo de proveedores de la misma, así como su aplicación como herramienta de inversión inmobiliaria.</p>
+<p>Una vez sepamos <strong>para qué se utiliza</strong>, reduciremos esta abstracción mostrando <strong>cómo ha sido desarrollada</strong>, dando así respuesta a una serie de cuestiones: ¿por qué se ha optado por estos gráficos?, ¿por qué mostrar una información determinada y no otra?, etc.</p>
+<p>Primero, definimos los gráficos interactivos y expondremos sus ventajas con respecto a los gráficos tradicionales, así como sus inconvenientes.</p>
+<p>A continuación abordaremos el uso del conjunto de gráficos interactivos por parte del equipo de proveedores y veremos en qué situaciones y cómo los utilizan.</p>
+<p>Por último, expondremos la posible aplicación y comercialización de la herramienta que hemos desarrollado en usos relacionados con la inversión inmobiliaria.</p>
+<p><em>A lo largo de esta sección, encontraremos diferentes figuras en las que la información correspondiente a los ejes x o y, así como a la leyenda, han sido cubiertos con un rectángulo negro. Esto lo hacemos para proteger la información de homyspace.</em></p>
+<p>Como recordatorio, la razón de existencia de esta aplicación es <strong>ayudar a tomar decisiones basadas en datos con respecto a los inmuebles en la base de datos de homyspace, y su interacción con los clientes.</strong>
+La aplicación está compuesta de 6 filtros distintos y de 4 gráficos interactivos diferentes que se ajustan dinámicamente a los filtros indicados.</p>
+<p></br></p>
+<div class="figure"><span id="fig:heatmapinitial"></span>
+<img src="images/heatmap_intro.jpg" alt="Pantalla principal de lo que vemos al abrir la aplicación."  />
+<p class="caption">
+Figura 3.6: Pantalla principal de lo que vemos al abrir la aplicación.
+</p>
+</div>
+<p></br></p>
+<p>El primer filtro con el que nos encontramos, denominado: <strong>“Selecciona en función de qué campo colorear el mapa de calor”</strong>, afecta exclusivamente al mapa de calor, y es el único de todos los filtros que es directamente visible para el usuario de la aplicación. En función del campo seleccionado, estaremos dando más importancia a la oferta, a la demanda o a la intersección de ambas.</p>
+<ul>
+<li>Si elegimos “Número de Oportunidades”, el mapa pintará más claro los distritos con menos demanda, y más oscuros aquellos donde nos hacen más solicitudes de alojamiento.</li>
+<li>Si elegimos “Número de Inmuebles”, el mapa dará mayor o menor importancia a aquellos distritos con más o menos inmuebles respectivamente.</li>
+<li>Por último, si elegimos “Número de Propuestas Aceptadas”, los distritos más oscuros serán aquellos donde se han aceptado más propuestas. Los más claros aquellos donde menos.</li>
+</ul>
+<p></br></p>
+<div class="figure"><span id="fig:heatmapcolors"></span>
+<img src="images/heatmap_colores.jpg" alt="Pantalla principal de las opciones de coloreado del mapa de calor."  />
+<p class="caption">
+Figura 3.7: Pantalla principal de las opciones de coloreado del mapa de calor.
+</p>
+</div>
+<p>Para acceder al resto de filtros, es necesario clicar en el borde izquierdo superior de la pantalla, a la derecha del icono de <strong>homyspace</strong> que vemos en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapinitial">3.6</a>. Hecho esto, nos aparecerá una lista vertical de opciones no excluyentes, por lo que podremos combinar diferentes filtros para visualizar la información deseada, como podemos ver en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapoptions">3.8</a>. Todos los gráficos interactivos exceptuando el mapa se actualizan dinámicamente en función de las opciones escogidas en cada filtro. La razón por la que se ha excluido la actualización del mapa tiene un trasfondo técnico que se explicará en la sección <em>4.4 Gráficos Interactivos</em> pero, en esencia, el motivo es que si quisiéramos actualizarlo, la velocidad de la aplicación se vería seriamente comprometida.</p>
+<p>En cualquier caso, estos filtros son:</p>
+<ul>
+<li>“Filtra por ciudad”: aquí podemos decidir sobre qué ciudades nos muestra información la aplicación.</li>
+<li>“Filtra por municipio”: aquí podemos ser más concretos y especificar el municipio que queremos visualizar.</li>
+<li>“Filtra por distrito”: una vez más, podemos aumentar la precisión de los datos y escoger qué distrito censal nos interesa más.</li>
+<li>“Filtra por número de camas”: en este caso, podemos escoger el número de camas de los inmuebles y propuestas a analizar.</li>
+<li>“Filtra por número de habitaciones”: por último, podemos elegir el número de habitaciones de los inmuebles y propuestas sobre los que realizar el análisis.</li>
+</ul>
+<p>Como hemos comentado antes, estos filtros son <strong>no excluyentes</strong>, por lo que podríamos analizar el estado de los inmuebles de una habitación con dos camas en un distrito de A Coruña, por poner un ejemplo.</p>
+<div class="figure" style="text-align: center"><span id="fig:heatmapoptions"></span>
+<img src="images/heatmap_filtros.jpg" alt="Pantalla principal de los filtros disponibles para decidir qué información mostrar en la aplicación."  />
+<p class="caption">
+Figura 3.8: Pantalla principal de los filtros disponibles para decidir qué información mostrar en la aplicación.
+</p>
+</div>
+<p></br></p>
+<p>A continuación, pasaremos a explicar los gráficos empleados en la aplicación.</p>
+<p>El primer gráfico que vemos al acceder a la aplicación es <strong>el mapa por distritos.</strong></p>
+<div class="figure"><span id="fig:mainScreen"></span>
+<img src="images/heatmap_mapaCalor.jpg" alt="Pantalla principal del mapa de calor al abrir la aplicación."  />
+<p class="caption">
+Figura 3.9: Pantalla principal del mapa de calor al abrir la aplicación.
+</p>
+</div>
+<p><strong>Como podemos ver, el zoom del mapa es a priori muy reducido como para poder diferenciar nada.</strong> Aumentamos el zoom para ser capaces de reconocer algunos distritos destacados.</p>
+<div class="figure"><span id="fig:heatmapzoom"></span>
+<img src="images/heatmap_mapaCalor2.jpg" alt="Pantalla principal del mapa de calor zoomeado en Toledo."  />
+<p class="caption">
+Figura 3.10: Pantalla principal del mapa de calor zoomeado en Toledo.
+</p>
+</div>
+<p></br></p>
+<p>Ahora ya somos capaces de separar visualmente ciertos distritos, en zonas como por ejemplo Toledo y Cáceres. Como podemos apreciar en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapzoom">3.10</a>, hay distritos rojos, amarillos y, si nos fijamos en Madrid, también naranjas. Siguiendo la lógica que hemos comentado antes con respecto al filtro <strong>“Selecciona en función de qué campo colorear el mapa de calor”</strong> en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapcolors">3.7</a>, los distritos rojos tienen un mayor número de oportunidades. Después, les siguen los distritos naranjas y, por último, los amarillos.</p>
+<p>Cabe señalar que no se ha utilizado un número fijo de colores, sino que se ha usado un gradiente de color que varía desde el rojo al amarillo. En los extremos, el color rojo representa a las zonas con mayor número de oportunidades y el amarillo a aquellas con un menor número.</p>
+<p>Por otro lado, aquellos distritos que vemos de color gris tienen este color porque no tienen oportunidades. Pero si es así: <em>¿Por qué aparecen distritos sin oportunidades?</em> Si aparecen ciertos distritos sin oportunidades: <em>¿Por qué no aparecen todos los distritos de España?</em> El motivo es que esos distritos no tienen oportunidades, pero sí inmuebles. Por lo tanto, los distritos en gris son <strong>zonas donde tenemos oferta que a día de hoy no ha encajado con las necesidades de nuestros clientes.</strong></p>
+<p>Habiendo visualizado el mapa, podemos seguir bajando por la aplicación. A continuación, nos encontramos con dos gráficos interactivos. Estos se modifican de dos maneras diferentes:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Cuando se clica en un distrito en el mapa, este se actualiza automáticamente para mostrar la información correspondiente al distrito elegido.</strong></li>
+<li><strong>Cuando se aplican filtros, la información que muestran estos gráficos se filtrará simultáneamente.</strong> Por ejemplo: si filtramos por la ciudad de Madrid, la información que utilizarán será exclusivamente la de esta ciudad.</li>
+</ol>
+<div class="figure"><span id="fig:heatmapfirstrow"></span>
+<img src="images/heatmap_preciosPropuestas.jpg" alt="Pantalla principal mostrando los gráficos que aparecen inmediatamente después del mapa de calor."  />
+<p class="caption">
+Figura 3.11: Pantalla principal mostrando los gráficos que aparecen inmediatamente después del mapa de calor.
+</p>
+</div>
+<p></br></p>
+<p>A la izquierda de la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapfirstrow">3.11</a>, se muestra un <strong>diagrama de caja múltiple</strong> (Ampliado en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapprices">3.12</a>). A la derecha un <strong>gráfico de barras</strong> (Ampliado en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapproposals">3.13</a>). Estos dos gráficos se complementan: el diagrama de caja resume la distribución de precios de los inmuebles de cada distrito en función del número de habitaciones, y el gráfico de barras muestra el número de propuestas aceptadas y rechazadas para inmuebles con diferente número de habitaciones.</p>
+<div class="figure"><span id="fig:heatmapprices"></span>
+<img src="images/heatmap_precios.jpg" alt="Pantalla principal del diagrama de caja que indica el alquiler de precios en función del número de habitaciones."  />
+<p class="caption">
+Figura 3.12: Pantalla principal del diagrama de caja que indica el alquiler de precios en función del número de habitaciones.
+</p>
+</div>
+<p></br></p>
+<div class="figure"><span id="fig:heatmapproposals"></span>
+<img src="images/heatmap_propuestas.jpg" alt="Pantalla principal del gráfico de barras que muestra el número de propuestas aceptadas y rechazadas por número de habitaciones."  />
+<p class="caption">
+Figura 3.13: Pantalla principal del gráfico de barras que muestra el número de propuestas aceptadas y rechazadas por número de habitaciones.
+</p>
+</div>
+<p></br></p>
+<p>A continuación, en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapsecondrow">3.14</a> se muestran otras dos visualizaciones interactivas que siguen la misma lógica que los gráficos explicados anteriormente.</p>
+<div class="figure"><span id="fig:heatmapsecondrow"></span>
+<img src="images/heatmap_inmueblesIcales.jpg" alt="Pantalla principal mostrando la segunda fila de gráficos que aparece tras el mapa de calor."  />
+<p class="caption">
+Figura 3.14: Pantalla principal mostrando la segunda fila de gráficos que aparece tras el mapa de calor.
+</p>
+</div>
+<p></br></p>
+<p>A la izquierda tenemos un gráfico de barras que nos indica el número de inmuebles que hay en el distrito en función del número de habitaciones (ampliado en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapboxplot">3.15</a>). A la derecha, un diagrama de barras que nos indica el porcentaje con respecto al total de inmuebles en el distrito que tienen (o no) calendario electrónico, o <em>iCal</em> (ampliado en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapical">3.16</a>).</p>
+<div class="figure"><span id="fig:heatmapboxplot"></span>
+<img src="images/heatmap_inmuebles.jpg" alt="Pantalla principal del gráfico de barras que muestra el número de inmuebles por número de habitaciones."  />
+<p class="caption">
+Figura 3.15: Pantalla principal del gráfico de barras que muestra el número de inmuebles por número de habitaciones.
+</p>
+</div>
+<p></br></p>
+<div class="figure"><span id="fig:heatmapical"></span>
+<img src="images/heatmap_iCales.jpg" alt="Pantalla principal del gráfico de barras que indica el porcentaje de inmuebles con y sin iCal."  />
+<p class="caption">
+Figura 3.16: Pantalla principal del gráfico de barras que indica el porcentaje de inmuebles con y sin iCal.
+</p>
+</div>
+<p></br></p>
+<p>Finalmente hemos añadido una tabla resumen en la que podemos visualizar <strong>toda la información relacionada con cada distrito</strong>. Podemos visualizar la estructura de esta tabla en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmaptable">3.17</a>.</p>
+<p>Esta tabla contiene filtros propios, muchos más rápidos que los previamente mencionados ya que sólo afectan a la información de la tabla. A diferencia de los filtros previamente expuestos en la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapoptions">3.8</a>, cuya modificación afectaba a todos los componentes de la aplicación (más concretamente los gráficos expuestos en las figuras <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapfirstrow">3.11</a> y <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmapsecondrow">3.14</a>), los filtros presentes en la tabla resumen de la figura <a href="aplicación-de-gráficos-interactivos-para-la-toma-de-decisiones-aspecto-y-componentes.html#fig:heatmaptable">3.17</a> <strong>únicamente</strong> afectarán a la misma tabla resumen, acelerando mucho la velocidad de carga en comparación con el resto de gráficos, que no se verán afectados con cada alteración de los filtros de la tabla.</p>
+<p>Esto nos permite abordar el análisis de una manera diferente: en vez de tratar de dar visibilidad al estado de cada distrito, con esta tabla se pretende poder <strong>obtener aquellos distritos que cumplan con las condiciones que nos interesen a nosotros</strong>. Por ejemplo, podemos filtrar únicamente los distritos cuyo número de propuestas sea mayor de 100 y tengan por lo menos 5 inmuebles reservados.</p>
+<p>Esta estrategia es útil porque podemos identificar qué distritos están funcionando peor para hacer un análisis posterior de por qué no están funcionando. Del mismo modo, podemos averiguar cuáles sí están funcionando y analizar las posibles razones de su éxito, con el propósito de aplicar una estrategia similar en otros distritos.</p>
+<div class="figure"><span id="fig:heatmaptable"></span>
+<img src="images/heatmap_resumen.jpg" alt="Pantalla principal de la tabla que resume la información por distrito de todas las propuestas."  />
+<p class="caption">
+Figura 3.17: Pantalla principal de la tabla que resume la información por distrito de todas las propuestas.
+</p>
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ventajas-de-los-gráficos-interactivos-frente-a-los-estáticos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aplicación-en-el-equipo-de-proveedores.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
