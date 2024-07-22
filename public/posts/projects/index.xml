@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index on juanramos.me</title>
+    <link>http://localhost:1313/posts/projects/</link>
+    <description>Recent content in Index on juanramos.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dbt-bigquery-preview</title>
+      <link>http://localhost:1313/posts/projects/dbt-bigquery-preview/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/projects/dbt-bigquery-preview/</guid>
+      <description>Two years ago, I found myself missing a functionality in VS Code that could ease the user experience of analytics engineers that used dbt, Google BigQuery, and VS Code. At the time, the possible paths were either:&#xA;Choose to compile dbt code and test its output in BQ. Compile dbt code in VS Code. Take the compiled code and paste it in BigQuery. Execute and iterate over result. Choose to execute in BQ and adapt to dbt.</description>
+    </item>
+    <item>
+      <title>minishell</title>
+      <link>http://localhost:1313/posts/projects/minishell/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/projects/minishell/</guid>
+      <description>This has been the toughest project so far since I joined 42.&#xA;It consisted on creating a program that was able to have many of the same functionalities bash has, such as:&#xA;Have a functional history of all previous commands. Run the right executable based on PATH or relative and absolute paths. Implement redirections such as &amp;lt;, &amp;gt;, &amp;laquo;, and &amp;raquo;. Implement pipes (|). Handle environment variables. Handle $?. Handle signals such as ctrl-C, ctrl-D, and ctrl-\.</description>
+    </item>
+    <item>
+      <title>Tutorial on configuring dbt and BigQuery</title>
+      <link>http://localhost:1313/posts/projects/dbt-bigquery-config/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/projects/dbt-bigquery-config/</guid>
+      <description>In 2020, I built the Data Warehouse for the startup I was working at. When I first started doing so, I couldn&amp;rsquo;t find any valuable resource about how to properly configure it.&#xA;I wanted something akin to what Jeremy Cohen layed out on his now classic article: setting up different warehouses (or databases) for different purposes, having dev and prod environments, as well as an environment where the raw data existed, independently of the other two.</description>
+    </item>
+  </channel>
+</rss>
