@@ -1,0 +1,25 @@
+baseURL = 'https://juanramos.vercel.app/'
+languageCode = 'en'
+title = 'juanramos.me'
+theme = 'archie'
+# paginate=3 # articles per page
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/jjuanramos"
+
+[[menu.main]]
+name = "essays"
+url = "/posts/essays"
+weight = 1
+
+[[menu.main]]
+name = "fiction"
+url = "/posts/fiction"
+weight = 2
+
+[[menu.main]]
+name = "projects"
+url = "/posts/projects"
+weight = 3

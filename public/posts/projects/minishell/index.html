@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>minishell - juanramos.me</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A cuter bash." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/projects/minishell/">
+  <meta property="og:site_name" content="juanramos.me">
+  <meta property="og:title" content="minishell">
+  <meta property="og:description" content="A cuter bash.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-24T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="minishell">
+  <meta name="twitter:description" content="A cuter bash.">
+<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+	
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.b39bb3d80f24f648b022b43f7bc7e5ede0b5b4290f728c582d603a09709feed2.css" />
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">juanramos.me</a>
+	</div>
+	<nav>
+		
+		<a href="/posts/essays" class="options">essays</a>
+		
+		<a href="/posts/fiction" class="options">fiction</a>
+		
+		<a href="/posts/projects" class="options">projects</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">minishell</h1>
+			<div class="meta">Posted on Jun 24, 2024</div>
+		</div>
+		
+
+		<section class="body">
+			<p>This has been the toughest project so far since I <a href="https://www.42madrid.com/en/philosophy-42/">joined 42</a>.</p>
+<p>It consisted on creating a program that was able to have many of the same functionalities bash has, such as:</p>
+<ul>
+<li>Have a functional history of all previous commands.</li>
+<li>Run the right executable based on PATH or relative and absolute paths.</li>
+<li>Implement redirections such as &lt;, &gt;, &laquo;, and &raquo;.</li>
+<li>Implement pipes (|).</li>
+<li>Handle environment variables.</li>
+<li>Handle $?.</li>
+<li>Handle signals such as ctrl-C, ctrl-D, and ctrl-\.</li>
+<li>Implement the built-ins: echo, cd, pwd, export, unset, env, and exit (except echo and cd, all of them without arguments).</li>
+<li>Make sure there are no leaks.</li>
+</ul>
+<p>My colleague <a href="https://github.com/cmunoz-g">Carlos</a> handled the tokenizer, lexer and parser of the input received, while I took care of handling the processes correctly (that is, redirections, pipes, and executing the right things at the right order<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>). We splitted the rest of stuff: I managed the environment variables and $?, as well as the signals and the easier built-ins; Carlos handled the harder built-ins such as export and unset, and implemented the history too.</p>
+<p><a href="https://github.com/cmunoz-g/minishell">Here&rsquo;s</a> the link to the repo.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I still have nightmares with the command <code>cat | cat | cat | echo &lt;&lt; end</code>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/jjuanramos" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2024  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
